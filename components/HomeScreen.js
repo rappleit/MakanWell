@@ -5,7 +5,7 @@ import { COLORS } from '../colors';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
-export function HomeScreen() {
+export function HomeScreen({navigation}) {
   return (
     <SafeAreaView edges={['left', 'right', 'bottom']} style={{ flex: 1 }}>
       <ScrollView contentContainerStyle={{ justifyContent: 'flex-start', alignItems: 'center' }} >
@@ -84,7 +84,8 @@ export function HomeScreen() {
         </View>
       </ScrollView>
       <TouchableOpacity
-        style={styles.addButton}>
+        style={styles.addButton}
+        onPress={() => navigation.navigate('AddDish')}>
         <Icon name={"camera"} color={"#FFF"} size={24} />
       </TouchableOpacity>
     </SafeAreaView>

@@ -1,32 +1,56 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { HomeScreen } from "../components/HomeScreen";
 import { DiscoverScreen } from "../components/DiscoverScreen";
 import { ProfileScreen } from "../components/ProfileScreen";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { COLORS } from "../colors";
+import { HomeScreen } from "../components/HomeScreen";
+import { createStackNavigator } from '@react-navigation/stack';
+import AddDish from "../components/AddDish";
+import FindIngredients from "../components/FindIngredients";
 
 const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
+
+function HomeStackNavigator() {
+    return (
+        <Stack.Navigator>
+            <Stack.Screen name="HomeScreen" component={HomeScreen} options={{
+                headerShown: false,
+            }} />
+            <Stack.Screen name="AddDish" component={AddDish} options={{
+                title: "Snap Your Meal", tabBarStyle: {
+                    display: "none",
+                },
+                tabBarButton: () => null
+            }} />
+            <Stack.Screen name="FindIngredients" component={FindIngredients} options={{
+                headerShown: false
+            }} />
+        </Stack.Navigator>
+    );
+}
 
 const Tabs = () => {
     return (
         <Tab.Navigator
-        screenOptions={{
-            headerShown: false, 
-            tabBarActiveTintColor: COLORS.primary,
-            tabBarStyle: { height: 60 }, 
-            tabBarLabelStyle:{marginBottom: 6}}}>
-            <Tab.Screen name="Home" component={HomeScreen} options={{
-                    tabBarIcon: ({size, color}) => (<Icon name={"home"} color={color} size={size} />)
-                }}/>
+            screenOptions={{
+                headerShown: false,
+                tabBarActiveTintColor: COLORS.primary,
+                tabBarStyle: { height: 60 },
+                tabBarLabelStyle: { marginBottom: 6 }
+            }}>
+            <Tab.Screen name="Home" component={HomeStackNavigator} options={{
+                tabBarIcon: ({ size, color }) => (<Icon name={"home"} color={color} size={size} />)
+            }} />
             <Tab.Screen name="Discover" component={DiscoverScreen} options={{
-                    tabBarIcon: ({size, color}) => (<Icon name={"search"} color={color} size={size} />)
-                }}/>
+                tabBarIcon: ({ size, color }) => (<Icon name={"search"} color={color} size={size} />)
+            }} />
             <Tab.Screen name="Rewards" component={DiscoverScreen} options={{
-                    tabBarIcon: ({size, color}) => (<Icon name={"star"} color={color} size={size} />)
-                }}/>
+                tabBarIcon: ({ size, color }) => (<Icon name={"star"} color={color} size={size} />)
+            }} />
             <Tab.Screen name="Profile" component={ProfileScreen} options={{
-                    tabBarIcon: ({size, color}) => (<Icon name={"user"} color={color} size={size} />)
-                }}/>
+                tabBarIcon: ({ size, color }) => (<Icon name={"user"} color={color} size={size} />)
+            }} />
 
         </Tab.Navigator>
     )
