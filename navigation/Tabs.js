@@ -7,6 +7,9 @@ import { HomeScreen } from "../components/HomeScreen";
 import { createStackNavigator } from '@react-navigation/stack';
 import AddDish from "../components/AddDish";
 import FindIngredients from "../components/FindIngredients";
+import DishAnalyser from "../components/DishAnalyser";
+import EditGoals from "../components/EditGoals";
+import RewardsScreen from "../components/RewardsScreen";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -26,10 +29,25 @@ function HomeStackNavigator() {
             <Stack.Screen name="FindIngredients" component={FindIngredients} options={{
                 headerShown: false
             }} />
+            <Stack.Screen name="DishAnalyser" component={DishAnalyser} options={{
+                headerShown: true,
+                
+            }} />
         </Stack.Navigator>
     );
 }
-
+function ProfileStackNavigator() {
+    return (
+        <Stack.Navigator>
+            <Stack.Screen name="ProfileScreen" component={ProfileScreen} options={{
+                headerShown: false,
+            }} />
+            <Stack.Screen name="EditGoals" component={EditGoals} options={{
+                headerShown: false,
+            }} />
+        </Stack.Navigator>
+    )
+}
 const Tabs = () => {
     return (
         <Tab.Navigator
@@ -45,10 +63,10 @@ const Tabs = () => {
             <Tab.Screen name="Discover" component={DiscoverScreen} options={{
                 tabBarIcon: ({ size, color }) => (<Icon name={"search"} color={color} size={size} />)
             }} />
-            <Tab.Screen name="Rewards" component={DiscoverScreen} options={{
+            <Tab.Screen name="Rewards" component={RewardsScreen} options={{
                 tabBarIcon: ({ size, color }) => (<Icon name={"star"} color={color} size={size} />)
             }} />
-            <Tab.Screen name="Profile" component={ProfileScreen} options={{
+            <Tab.Screen name="Profile" component={ProfileStackNavigator} options={{
                 tabBarIcon: ({ size, color }) => (<Icon name={"user"} color={color} size={size} />)
             }} />
 

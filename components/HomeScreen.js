@@ -21,16 +21,22 @@ export function HomeScreen({navigation}) {
           
           <View style={styles.goalCard}>
             <View style={styles.goalItem}>
-              <Icon name={"apple"} color={COLORS.primary} size={36} />
+            <Image
+              style={{height: 36, objectFit: "contain"}}
+              source={require('../assets/goal1.png')} />
               <Text style={styles.goalLabel}>Low Carb</Text>
             </View>
             <View style={styles.goalItem}>
-              <Icon name={"apple"} color={COLORS.primary} size={36} />
+            <Image
+              style={{height: 36, objectFit: "contain"}}
+              source={require('../assets/goal2.png')} />
               <Text style={styles.goalLabel}>Less Sodium</Text>
             </View>
             <View style={styles.goalItem}>
-              <Icon name={"apple"} color={COLORS.primary} size={36} />
-              <Text style={styles.goalLabel}>High Protein</Text>
+            <Image
+              style={{height: 36, objectFit: "contain"}}
+              source={require('../assets/goal3.png')} />
+              <Text style={styles.goalLabel}>Less Sugar</Text>
             </View>
           </View>
         </View>
