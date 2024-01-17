@@ -31,6 +31,19 @@ Step 2: Start your virtual device
 
 Step 3: In the root directory, run the following command:
 
+``` expo start --tunnel ```
+
+Step 4: Press 'a' to launch the app
+
+### Expo Go App
+
+Step 1: Download the Expo Go app on your device
+
+Step 2: In the root directory, run the following command:
+
+``` expo start --tunnel ```
+
+Step 3: Scan the QR code in the terminal with the Expo Go app
 
 
 ## Potential
@@ -43,6 +56,6 @@ MakanWell can partner with local restaurants, food delivery platforms, and healt
 
 Unhealthy eating habits and the desire for healthier alternatives are not unique to Singapore. While initially targeting the Singaporean market, with the current scale of AI technologies, we can expand our reach to the global market, catering to any cuisines, any eateries, and any diet.
 
-## Prototype
+## Figma
 
 Figma: https://www.figma.com/file/uYfUVJ1AtwLi95YhcsfNQ0/MakanWell?type=design&node-id=0%3A1&mode=design&t=IVJk15IClyqKpDCR-1
