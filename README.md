@@ -18,6 +18,21 @@ Introducing MakanWell, a super app that is powered with AI to revolutionize eati
 
 **Gamification:** Earn stars for making the conscious choice to select healthier choices, and be rewarded with offers and discounts in your journey of eating healthily!
 
+## Installation
+
+### Android Studio Emulator
+
+Step 1: To set up a virtual device on Android Studio Emulator, please follow the instructions in the link below:
+
+
+https://docs.expo.dev/workflow/android-studio-emulator/
+
+Step 2: Start your virtual device
+
+Step 3: In the root directory, run the following command:
+
+
+
 ## Potential
 
 Health mindfulness is on the rise. 76% of Singaporeans are more diet-conscious post pandemic. The Health Promotion Board has been on an aggressive campaign to promote healthy eating, giving out grants to support business aimed at promoting healthy lifestyles, wellness initiatives, and healthcare innovation. MakanWell has the potential to play a crucial role in mitigating the health crisis associated with unhealthy eating habits.
