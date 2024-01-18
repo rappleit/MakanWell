@@ -18,9 +18,20 @@ Introducing MakanWell, a super app that is powered with AI to revolutionize eati
 
 **Gamification:** Earn stars for making the conscious choice to select healthier choices, and be rewarded with offers and discounts in your journey of eating healthily!
 
-## Installation
+## Setup Guide
 
-### Android Studio Emulator
+### Installation
+
+Step 1: Clone the repo
+```
+git clone https://github.com/rappleit/MakanWell.git
+```
+Step 2: Install dependencies
+```
+npm install
+```
+
+#### Android Studio Emulator
 
 Step 1: To set up a virtual device on Android Studio Emulator, please follow the instructions in the link below:
 
@@ -35,7 +46,7 @@ Step 3: In the root directory, run the following command:
 
 Step 4: Press 'a' to launch the app
 
-### Expo Go App
+#### Expo Go App
 
 Step 1: Download the Expo Go app on your device
 
