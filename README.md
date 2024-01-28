@@ -29,6 +29,8 @@ git clone https://github.com/rappleit/MakanWell.git
 Step 2: Install dependencies
 ```
 npm install
+npm start
+s > a
 ```
 
 #### Android Studio Emulator
