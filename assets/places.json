@@ -1,0 +1,3040 @@
+{
+    "Mariam Bee Indian Muslim Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-07 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 16
+    },
+    "Labrador Malay Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-105 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 24
+    },
+    "Edmond Chicken Rice": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-110 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 21
+    },
+    "Al-Amin Food Stall": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-19 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 14
+    },
+    "Al-Amin Food Stall (2)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-95 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Warong Azizah Malay Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-15 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 29
+    },
+    "Rahumath Indian Muslim Food From West Coast": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-19 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 20
+    },
+    "Indonesian Food House": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-06 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 21
+    },
+    "Sharifah Nasi Padang": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-37 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 23
+    },
+    "Alif Nasi Padang": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-40 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 13
+    },
+    "Surya Nasi Lemak": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-43 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 29
+    },
+    "Karamah Firdaus": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "50A Marine Terrace #01-303 Singapore 441050",
+            "coords": {
+                "latitude": 1.30572973591916,
+                "longitude": 103.915737035334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 11
+    },
+    "Yok Mari Yok Nasi Padang": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "84 Marine Parade Central #01-03 Singapore 440084",
+            "coords": {
+                "latitude": 1.30228520968842,
+                "longitude": 103.906288669909
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 27
+    },
+    "Izah Rahman Corner": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "84 Marine Parade Central #01-40 Singapore 440084",
+            "coords": {
+                "latitude": 1.30228520968842,
+                "longitude": 103.906288669909
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 27
+    },
+    "Ros Muslim Food Stall": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "6 Jalan Bukit Merah #01-05 Singapore 150006",
+            "coords": {
+                "latitude": 1.28688297261475,
+                "longitude": 103.808131274161
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 11
+    },
+    "Skeikh Indian Pakistani Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "6 Jalan Bukit Merah #01-12 Singapore 150006",
+            "coords": {
+                "latitude": 1.28688297261475,
+                "longitude": 103.808131274161
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 26
+    },
+    "Siti Nur Liyana Nasi Lemak": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "2 Adam Road #01-14 Singapore 289876",
+            "coords": {
+                "latitude": 1.32415985259558,
+                "longitude": 103.814165924136
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 15
+    },
+    "Warong Pak Sapari": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "2 Adam Road #01-09 Singapore 289876",
+            "coords": {
+                "latitude": 1.32415985259558,
+                "longitude": 103.814165924136
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 14
+    },
+    "Mohamed Jaleel Muslim Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "270 Queen St #01-122 Singapore 180270",
+            "coords": {
+                "latitude": 1.30110201573423,
+                "longitude": 103.854115779087
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Pondok Makan Indonesia": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "270 Queen St #01-123 Singapore 180270",
+            "coords": {
+                "latitude": 1.30110201573423,
+                "longitude": 103.854115779087
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 15
+    },
+    "Zahra Muslim Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "270 Queen St #01-124 Singapore 180270",
+            "coords": {
+                "latitude": 1.30110201573423,
+                "longitude": 103.854115779087
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 14
+    },
+    "Muslim Food Suzana @ Queen Street": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "270 Queen St #01-126 Singapore 180270",
+            "coords": {
+                "latitude": 1.30110201573423,
+                "longitude": 103.854115779087
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 12
+    },
+    "Al-Naim": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "270 Queen St #01-194 Singapore 180270",
+            "coords": {
+                "latitude": 1.30110201573423,
+                "longitude": 103.854115779087
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 13
+    },
+    "Banana Leaf Nasi Padang": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "7 Maxwell Rd #02-93 Singapore 069111",
+            "coords": {
+                "latitude": 1.27935389427121,
+                "longitude": 103.846195973221
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 17
+    },
+    "Indian Muslim Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "7 Maxwell Rd #02-135 Singapore 069111",
+            "coords": {
+                "latitude": 1.27935389427121,
+                "longitude": 103.846195973221
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 20
+    },
+    "K.S Muslim Food Stall": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "7 Maxwell Rd #01-63 Singapore 069111",
+            "coords": {
+                "latitude": 1.27935389427121,
+                "longitude": 103.846195973221
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Mazni'S Family": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "7 Maxwell Rd #01-71 Singapore 069111",
+            "coords": {
+                "latitude": 1.27935389427121,
+                "longitude": 103.846195973221
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 21
+    },
+    "Nmr Indian Muslim Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "628 Ang Mo Kio Ave 4 #01-98 Singapore 560628",
+            "coords": {
+                "latitude": 1.38098761665454,
+                "longitude": 103.840628087484
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 19
+    },
+    "Rosnah'S Family Kitchen": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "628 Ang Mo Kio Ave 4 #01-97 Singapore 560628",
+            "coords": {
+                "latitude": 1.38098761665454,
+                "longitude": 103.840628087484
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Al Zamira Restaurant": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "724 Ang Mo Kio Ave 6 #01-04 Singapore 560724",
+            "coords": {
+                "latitude": 1.37217258545171,
+                "longitude": 103.846510310202
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 23
+    },
+    "Yunos N Family": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "724 Ang Mo Kio Ave 6 #01-01 Singapore 560724",
+            "coords": {
+                "latitude": 1.37217258545171,
+                "longitude": 103.846510310202
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Dapur Mak Tok": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "503 West Coast Drive #01-62 Singapore 120503",
+            "coords": {
+                "latitude": 1.31180308926424,
+                "longitude": 103.759751405542
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Dullimah Sulaiman": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "503 West Coast Drive #01-52 Singapore 120503",
+            "coords": {
+                "latitude": 1.31180308926424,
+                "longitude": 103.759751405542
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "M. Mohamed Ismail": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "503 West Coast Drive #01-57 Singapore 120503",
+            "coords": {
+                "latitude": 1.31180308926424,
+                "longitude": 103.759751405542
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 19
+    },
+    "Nasi Padang Warong Pojok": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "503 West Coast Drive #01-80 Singapore 120503",
+            "coords": {
+                "latitude": 1.31180308926424,
+                "longitude": 103.759751405542
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 17
+    },
+    "Power Rojak Bandung": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "503 West Coast Drive #01-63 Singapore 120503",
+            "coords": {
+                "latitude": 1.31180308926424,
+                "longitude": 103.759751405542
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 19
+    },
+    "Putri Hana": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "503 West Coast Drive #01-69 Singapore 120503",
+            "coords": {
+                "latitude": 1.31180308926424,
+                "longitude": 103.759751405542
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 16
+    },
+    "West Coast Bbq Seafood": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "503 West Coast Drive #01-24 Singapore 120503",
+            "coords": {
+                "latitude": 1.31180308926424,
+                "longitude": 103.759751405542
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Yushni Food Stall": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "503 West Coast Drive #01-54 Singapore 120503",
+            "coords": {
+                "latitude": 1.31180308926424,
+                "longitude": 103.759751405542
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 17
+    },
+    "Zoul Nasi Ayam Penyet": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "503 West Coast Drive #01-22 Singapore 120503",
+            "coords": {
+                "latitude": 1.31180308926424,
+                "longitude": 103.759751405542
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 15
+    },
+    "Zoul'S Corner": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "503 West Coast Drive #01-25 Singapore 120503",
+            "coords": {
+                "latitude": 1.31180308926424,
+                "longitude": 103.759751405542
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 12
+    },
+    "Ole-Ole Javiyan": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Bedok Road #01-05 Singapore 469572",
+            "coords": {
+                "latitude": 1.32034716834128,
+                "longitude": 103.955480570427
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Satay Solo": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Bedok Road #01-09 Singapore 469572",
+            "coords": {
+                "latitude": 1.32034716834128,
+                "longitude": 103.955480570427
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 22
+    },
+    "Sinarah Cahaya Bedok Corner": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Bedok Road #01-04 Singapore 469572",
+            "coords": {
+                "latitude": 1.32034716834128,
+                "longitude": 103.955480570427
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Jefri The Original Botak Chicken Rice": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "208B New Upper Changi Rd #01-65 Singapore 462208",
+            "coords": {
+                "latitude": 1.32481816551889,
+                "longitude": 103.930544296289
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Merah Delima Stall": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "208B New Upper Changi Rd #01-69 Singapore 462208",
+            "coords": {
+                "latitude": 1.32481816551889,
+                "longitude": 103.930544296289
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 28
+    },
+    "Minhad": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "208B New Upper Changi Rd #01-66 Singapore 462208",
+            "coords": {
+                "latitude": 1.32481816551889,
+                "longitude": 103.930544296289
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 17
+    },
+    "D' Al Baasith Place": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "630 Bedok Reservoir Rd #01-06 Singapore 470630",
+            "coords": {
+                "latitude": 1.33277279217212,
+                "longitude": 103.914190840298
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 16
+    },
+    "Indian Muslim Food (2)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "29 Bendemeer Rd #01-76 Singapore 330029",
+            "coords": {
+                "latitude": 1.31921667890113,
+                "longitude": 103.863020922593
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 26
+    },
+    "Warong Mak Limah & Family": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "29 Bendemeer Rd #01-84 Singapore 330029",
+            "coords": {
+                "latitude": 1.31921667890113,
+                "longitude": 103.863020922593
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 17
+    },
+    "Breadtalk": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "9 Bishan Place, Junction 8 #01-35 Singapore 579837",
+            "coords": {
+                "latitude": 1.3503246633838,
+                "longitude": 103.848557944325
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 19
+    },
+    "Breadtalk (2)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "63 Jurong West Central 3, Jurong Point Shopping Centre #B1-72 Singapore 648331",
+            "coords": {
+                "latitude": 1.33931503949907,
+                "longitude": 103.705351000543
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 22
+    },
+    "Breadtalk (3)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "238 Thomson Road, Novena Square #01-26 Singapore 307683",
+            "coords": {
+                "latitude": 1.31996748439185,
+                "longitude": 103.843850630993
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 23
+    },
+    "Breadtalk (4)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "290 Orchard Road, Paragon Shopping Centre #B1-11 Singapore 238859",
+            "coords": {
+                "latitude": 1.30372322368856,
+                "longitude": 103.83524031199
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 16
+    },
+    "Breadtalk (5)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "252 North Bridge Road, Raffles City Shopping Centre #B1-44A Singapore 179103",
+            "coords": {
+                "latitude": 1.29389357863312,
+                "longitude": 103.853119904656
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 23
+    },
+    "Breadtalk (6)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "530 Lorong 6, Toa Payoh HDB Hub #01-04 Singapore 310530",
+            "coords": {
+                "latitude": 1.33245835393863,
+                "longitude": 103.84711660701
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 23
+    },
+    "Breadtalk (7)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "8 Sixth Avenue #01-00 Singapore 276473",
+            "coords": {
+                "latitude": 1.33104698101794,
+                "longitude": 103.795098790808
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 26
+    },
+    "Breadtalk (8)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "101 Thomson Road, United Square Shopping Mall #01-75A Singapore 307591",
+            "coords": {
+                "latitude": 1.31733463220331,
+                "longitude": 103.843463175724
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 17
+    },
+    "Breadtalk (9)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "4 Tampines Central 5, Tampines Mall #01-32 Singapore 529510",
+            "coords": {
+                "latitude": 1.35259361362837,
+                "longitude": 103.944785968039
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Breadtalk (10)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "78 Airport Boulevard, Jewel Changi Airport #B2-233 Singapore 819666",
+            "coords": {
+                "latitude": 1.35993782064432,
+                "longitude": 103.990002942162
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 12
+    },
+    "Breadtalk (11)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "302 Tiong Bahru Road, Tiong Bahru Plaza #01-110 Singapore 168732",
+            "coords": {
+                "latitude": 1.28644021678218,
+                "longitude": 103.827450721571
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 23
+    },
+    "Breadtalk (12)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "109 North Bridge Road, Funan #B1-26 Singapore 179097",
+            "coords": {
+                "latitude": 1.29134759697794,
+                "longitude": 103.849989789813
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 13
+    },
+    "Each A Cup": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "5 Stadium Walk, Leisure Park Kallang #01-30 Singapore 397693",
+            "coords": {
+                "latitude": 1.30192883841134,
+                "longitude": 103.876208170362
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 16
+    },
+    "Each A Cup (2)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "2 Orchard Turn, ION Orchard #B4-69 Singapore 238801",
+            "coords": {
+                "latitude": 1.30399286856099,
+                "longitude": 103.831988903795
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Each A Cup (3)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Woodlands Square, Causeway Point #B1-K19 Singapore 738099",
+            "coords": {
+                "latitude": 1.43592702612215,
+                "longitude": 103.786047454862
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Each A Cup (4)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "50 Nanyang Avenue, North Spine Plaza, Nanyang Technological University #NS3-01-21 Singapore 639798",
+            "coords": {
+                "latitude": 1.34616796937179,
+                "longitude": 103.680409508774
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 26
+    },
+    "Each A Cup (5)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Choa Chu Kang Grove, ITE College West #05-01 Singapore 688236",
+            "coords": {
+                "latitude": 1.37502493769351,
+                "longitude": 103.752112706056
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 26
+    },
+    "Each A Cup (6)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "598 Yishun Ring Road, Wisteria Mall #01-22 Singapore 768698",
+            "coords": {
+                "latitude": 1.41795288501536,
+                "longitude": 103.841268831617
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 28
+    },
+    "Each A Cup (7)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Jurong East Street 21, Ng Teng Feng General Hospital, Tower A #02-27 Singapore 609606",
+            "coords": {
+                "latitude": 1.33360619131534,
+                "longitude": 103.745448362928
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 28
+    },
+    "Each A Cup (8)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "477 Tampines Street 43 #01-174 Singapore 520477",
+            "coords": {
+                "latitude": 1.36092155092893,
+                "longitude": 103.952892124796
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 19
+    },
+    "Each A Cup (9)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "51 Upper Serangoon Road, The Poiz Centre #01-10 Singapore 347697",
+            "coords": {
+                "latitude": 1.33135550782584,
+                "longitude": 103.868150095119
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Each A Cup (10)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "68 Orchard Road, Plaza Singapura #B2-48 Singapore 238839",
+            "coords": {
+                "latitude": 1.30074770963916,
+                "longitude": 103.845047573431
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 22
+    },
+    "Each A Cup (11)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "443 Pasir Ris Drive 6 #01-14 Singapore 510443",
+            "coords": {
+                "latitude": 1.36940860628198,
+                "longitude": 103.957395750219
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 28
+    },
+    "Each A Cup (12)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Rivervale Crescent, Rivervale Mall #01-22 Singapore 545082",
+            "coords": {
+                "latitude": 1.39221732695142,
+                "longitude": 103.904473070943
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Each A Cup (13)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Bukit Batok Central Link, West Mall #01-07 Singapore 658713",
+            "coords": {
+                "latitude": 1.34992152880216,
+                "longitude": 103.749171990184
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 20
+    },
+    "Each A Cup (14)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "200 Commonwealth Ave West, Dover MRT Station #02-02 Singapore 138677",
+            "coords": {
+                "latitude": 1.31139153717332,
+                "longitude": 103.778656381761
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 22
+    },
+    "Each A Cup (15)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "503 Jurong West Avenue 1 #01-831 Singapore 640503",
+            "coords": {
+                "latitude": 1.34995541024281,
+                "longitude": 103.717704811514
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 15
+    },
+    "Each A Cup (16)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "200 Holland Avenue, Holland Village MRT Station #B1-12 Singapore 278995",
+            "coords": {
+                "latitude": 1.31222235164004,
+                "longitude": 103.79644667166
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 21
+    },
+    "Each A Cup (17)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "101 Bukit Panjang Road, Senja-Cashew CC #01-03 Singapore 679910",
+            "coords": {
+                "latitude": 1.3816381331934,
+                "longitude": 103.764676250968
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Each A Cup (18)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "15 Petir Road, Bukit Panjang ITH #01-61 Singapore 678270",
+            "coords": {
+                "latitude": 1.37843100827586,
+                "longitude": 103.762842789877
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 21
+    },
+    "Each A Cup (19)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Pasir Ris Close, Downtown East, E!Avenue #02-K2 Singapore 519599",
+            "coords": {
+                "latitude": 1.37656567661723,
+                "longitude": 103.95522291538
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 17
+    },
+    "Each A Cup (20)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "306 Ubi Avenue 1 #01-195 Singapore 400306",
+            "coords": {
+                "latitude": 1.32987117232209,
+                "longitude": 103.901930369733
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 11
+    },
+    "Each A Cup (21)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "106 Yishun Ring Road #01-151 Singapore 760106",
+            "coords": {
+                "latitude": 1.43147861432349,
+                "longitude": 103.827452004212
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Each A Cup (22)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "417 Yishun Avenue 11 #01-347 Singapore 760417",
+            "coords": {
+                "latitude": 1.4243850673899,
+                "longitude": 103.846329063065
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 29
+    },
+    "Yole": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "17 Petir Road, Hillion Mall #B1-45 Singapore 678270",
+            "coords": {
+                "latitude": 1.37843100827586,
+                "longitude": 103.762842789877
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 26
+    },
+    "Yole (2)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "68 Orchard Road, Plaza Singapura #01-22A Singapore 238839",
+            "coords": {
+                "latitude": 1.30074770963916,
+                "longitude": 103.845047573431
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Yole (3)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "4 Tampines Central 5, Tampines Mall #B1-K18 Singapore 529510",
+            "coords": {
+                "latitude": 1.35259361362837,
+                "longitude": 103.944785968039
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 20
+    },
+    "Yole (4)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "101 Thomson Road, United Square #01-K14 Singapore 307591",
+            "coords": {
+                "latitude": 1.31733463220331,
+                "longitude": 103.843463175724
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 15
+    },
+    "Yole (5)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "83 Punggol Central, Waterway Point #01-63 Singapore 828761",
+            "coords": {
+                "latitude": 1.40637933605759,
+                "longitude": 103.902172248289
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Yole (6)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Bukit Batok Central Link, Westmall #01-K6 Singapore 658713",
+            "coords": {
+                "latitude": 1.34992152880216,
+                "longitude": 103.749171990184
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 15
+    },
+    "Yole (7)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "311 New Upper Changi Road, Bedok Mall #01-40 Singapore 467360",
+            "coords": {
+                "latitude": 1.3247936058839,
+                "longitude": 103.929360375114
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 26
+    },
+    "Yole (8)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "201 Victoria Street, Bugis+ #03-27 Singapore 188067",
+            "coords": {
+                "latitude": 1.29963881014497,
+                "longitude": 103.854304640923
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 19
+    },
+    "Yole (9)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Woodlands Square, Causeway Point #B1-K28 Singapore 738099",
+            "coords": {
+                "latitude": 1.43592702612215,
+                "longitude": 103.786047454862
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 16
+    },
+    "Yole (10)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "313 Orchard Road, 313@Somerset #B3-55 Singapore 238895",
+            "coords": {
+                "latitude": 1.30100656917241,
+                "longitude": 103.838246592796
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 20
+    },
+    "Yole (11)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 HabourFront Walk, VivoCity #02-133 Singapore 098585",
+            "coords": {
+                "latitude": 1.26431382492761,
+                "longitude": 103.82207343835
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Yole (12)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "3 Gateway Drive, Westgate #03-02 Singapore 608532",
+            "coords": {
+                "latitude": 1.33415752008876,
+                "longitude": 103.742766489597
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 27
+    },
+    "Yole (13)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Jurong West Central 2, Jurong Point Shopping Centre #03-29/30 Singapore 648886",
+            "coords": {
+                "latitude": 1.33973886612177,
+                "longitude": 103.706789553588
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 11
+    },
+    "Yole (14)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "320 Orchard Road, Marriott Tang Plaza Hotel #01-K2 Singapore 238865",
+            "coords": {
+                "latitude": 1.30508745509362,
+                "longitude": 103.832950652246
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Delcie'S": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "34 Whampoa West, Bendemeer Ville #01-83 Singapore 330034",
+            "coords": {
+                "latitude": 1.32050169556608,
+                "longitude": 103.863341271367
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Delifrance": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "100 Bukit Timah Road, KK Women's And Children's Hospital #01-08 Singapore 229899",
+            "coords": {
+                "latitude": 1.31044853153909,
+                "longitude": 103.846650073396
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": ["Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Kitchen 101 Western & Local Delights": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-101 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 22
+    },
+    "Muni'S Banana Leaf": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-104 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 15
+    },
+    "Econ Kitchen": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-107 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 20
+    },
+    "吃爽手工面粉粿": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-108 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 29
+    },
+    "Hai-O Cooked Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-109 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 15
+    },
+    "Economy Snacks": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-112 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 22
+    },
+    "Dai Ming Cooked Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-113 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 19
+    },
+    "Tasty Soup Yong Tau Foo": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-115 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 12
+    },
+    "荣记": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-117 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 14
+    },
+    "Noordima Malay Food Stall": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-118 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 26
+    },
+    "Teochew Hand Made Squid Ball. Pork Ball. Mixed Soup": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-119 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 11
+    },
+    "Abc Hawker Ah Hua Fish Ball Noodle": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-123 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Song Heng Fish Ball Noodle": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-124 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Kou Fu Le Fish Soup": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-126 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Fei Zhu": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-133 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Nan Fang Cooked Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-16 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Teochew Hand Made Squid Ball. Pork Ball. Mixed Soup (2)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-17 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 12
+    },
+    "Noordima Malay Food Stall (2)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-78 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 12
+    },
+    "Healthy Vegetarian Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-83 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 22
+    },
+    "Bb Curry Rice": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-89 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Ru Yi Vegetarian": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-92 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 28
+    },
+    "Hua Fa Fish Noodle": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-97 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 21
+    },
+    "Xiang Ji Porridge": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-98 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 16
+    },
+    "Spinach Yong Tau Foo Soup": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 Telok Blangah Cres #01-99 Singapore 090011",
+            "coords": {
+                "latitude": 1.27736813225761,
+                "longitude": 103.818651524334
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 27
+    },
+    "Kim Kee": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-01 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 29
+    },
+    "Lao Ding Mei Shi": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-02 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 24
+    },
+    "Guang Fa Mixed Veg Rice": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-04 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Ke Kou Cooked Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-05 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Rice Garden": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-07 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 21
+    },
+    "Hong Yong Chao Zhou Yu Yuan Guo Tiao Mian": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-09 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 21
+    },
+    "Ah Bao Mei Shi": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-10 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 23
+    },
+    "Shenton Way Golden Bridge Roasted Chicken Rice": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-139 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 22
+    },
+    "Jit Man Prawn Noodle & Lor Mee": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-16 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 11
+    },
+    "Tiong Bahru Chun Fa Wanton Noodle": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-17 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Lin Ji Traditional & Nonya Kueh": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-20 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 24
+    },
+    "Lye Huat Cooked Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "112 Jalan Bukit Merah #01-21 Singapore 160112",
+            "coords": {
+                "latitude": 1.28000480135122,
+                "longitude": 103.82601329621
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 11
+    },
+    "Zheng Yuan": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-02 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 24
+    },
+    "Yin Xin Gao Dian": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-03 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Quan Xin Vegetarian Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-04 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Xing Xing Handmade Ban Mian Fish Soup": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-08 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 15
+    },
+    "Ng Soo Kee Fish": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-11 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Singapore Shui Kueh": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-14 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Ji De Lai": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-16 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 28
+    },
+    "Rong Xiang Vegetarian Food": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-19 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 24
+    },
+    "Hoe Kee Wanton Mee": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-22 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 28
+    },
+    "Zhou": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-26 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Jin Jin Hokkien Prawn Noodles": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-27 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 19
+    },
+    "29 Singapore Chicken Rice": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-29 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Teochew Kueh": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-30 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Meng Kee Hainanese Chicken Rice": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "117 Aljunied Ave 2 #01-32 Singapore 380117",
+            "coords": {
+                "latitude": 1.32064636781982,
+                "longitude": 103.88702414
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 27
+    },
+    "Otc Café": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "100 Victoria Building Street, National Library Building #03-01 Singapore 188064",
+            "coords": {
+                "latitude": 1.29747181613924,
+                "longitude": 103.854243814118
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Harvest Salad & Soup": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "10 Eunos Road 8, Singapore Post Centre #B1-160 Singapore 408600",
+            "coords": {
+                "latitude": 1.31893132637472,
+                "longitude": 103.894482925602
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Wafuken": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "12 Marina View, Asia Square Tower 2 #02-05 Singapore 018961",
+            "coords": {
+                "latitude": 1.27822949964567,
+                "longitude": 103.850812513482
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 12
+    },
+    "Wafuken (2)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "29 Media Circle, Alice@Mediapolis #01-02/03 Unit 8 Singapore 138565",
+            "coords": {
+                "latitude": 1.29379198840514,
+                "longitude": 103.793103084317
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Wafuken (3)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "6A Shenton Way, OUE Downtown Gallery #02-23 Singapore 068815",
+            "coords": {
+                "latitude": 1.27761491743628,
+                "longitude": 103.848746409782
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 20
+    },
+    "Hjh Maimunah": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "20 Joo Chiat Road #- Singapore 427527",
+            "coords": {
+                "latitude": 1.31029531669043,
+                "longitude": 103.901973396985
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 13
+    },
+    "Hjh Maimunah (2)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "11 & 17 Jalan Pisang #- Singapore 199078",
+            "coords": {
+                "latitude": 1.30310710508455,
+                "longitude": 103.858553528675
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 17
+    },
+    "Hockhua Tonic": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "1 Bukit Batok Central Link, West Mall #B1-K3 Singapore 658713",
+            "coords": {
+                "latitude": 1.35029683568301,
+                "longitude": 103.749064191572
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 23
+    },
+    "Hockhua Tonic (2)": {
+        "type": "hawker centre",
+        "address": {
+            "formatted": "3155 Commonwealth Avenue West, The Clementi Mall #B1-K18 Singapore 129588",
+            "coords": {
+                "latitude": 1.3154959389283,
+                "longitude": 103.764583794683
+            }
+        },
+        "goals": ["Low Carb"],
+        "dietary requirements": [],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Prata Wala": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "9 Bishan Place, Junction 8 #B1-24 Singapore 579837",
+            "coords": {
+                "latitude": 1.3503246633838,
+                "longitude": 103.848557944325
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Prata Wala (2)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "23 Serangoon Central, NEX #02-K05 Singapore 556083",
+            "coords": {
+                "latitude": 1.35076935257845,
+                "longitude": 103.872296143862
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Prata Wala (3)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "930 Yishun Avenue 2, Northpoint City #B1-57 Singapore 769098",
+            "coords": {
+                "latitude": 1.42973387379292,
+                "longitude": 103.835854862105
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Prata Wala (4)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "4 Tampines Central 5, Tampines Mall #B1-K21 Singapore 529510",
+            "coords": {
+                "latitude": 1.35259361362837,
+                "longitude": 103.944785968039
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 26
+    },
+    "Prata Wala (5)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "63 Jurong West Central 3, Jurong Point Shopping Centre #01-71 Singapore 648331",
+            "coords": {
+                "latitude": 1.33931503949907,
+                "longitude": 103.705351000543
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 12
+    },
+    "Penang Culture": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "1 Sengkang Square, Compass One #03-13 Singapore 545078",
+            "coords": {
+                "latitude": 1.3920543053799,
+                "longitude": 103.895063884132
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 12
+    },
+    "Penang Culture (2)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "1 Woodlands Square, Causeway Point #05-12 Singapore 738099",
+            "coords": {
+                "latitude": 1.43592702612215,
+                "longitude": 103.786047454862
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 27
+    },
+    "Penang Culture (3)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "1 Pasir Ris Central Street 3, White Sands #03-21 Singapore 518457",
+            "coords": {
+                "latitude": 1.37234519149636,
+                "longitude": 103.949805421214
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 17
+    },
+    "Penang Culture (4)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "23 Serangoon Central, NEX #B1-76 Singapore 556083",
+            "coords": {
+                "latitude": 1.35076935257845,
+                "longitude": 103.872296143862
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 26
+    },
+    "Penang Culture (5)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "50 Jurong Gateway Road, JEM #04-27 Singapore 608549",
+            "coords": {
+                "latitude": 1.3325523295069,
+                "longitude": 103.743262234833
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 27
+    },
+    "Penang Culture (6)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "60 Airport Boulevard, Singapore Changi Airport, Terminal 2 #036-087-01 Singapore 819643",
+            "coords": {
+                "latitude": 1.35623975435982,
+                "longitude": 103.98936496626
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 13
+    },
+    "Hajjah Mariam Cafe": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "3 Gateway Drive, Westgate #B2-07 Singapore 608532",
+            "coords": {
+                "latitude": 1.33415752008876,
+                "longitude": 103.742766489597
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 19
+    },
+    "Callery'S": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "20 Sin Ming Lane, Midview City #03-65 Singapore 573968",
+            "coords": {
+                "latitude": 1.35809519565132,
+                "longitude": 103.833356050393
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Eatzi Gourmet Steakhouse & Bistro": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "60 Yishun Avenue 4, SAFRA Yishun #01-01 Singapore 769027",
+            "coords": {
+                "latitude": 1.42429829576671,
+                "longitude": 103.840902278162
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 21
+    },
+    "Eatzi Gourmet Steakhouse & Bistro (2)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "60 Paya Lebar Road, Paya Lebar Square #B1-15 Singapore 409051",
+            "coords": {
+                "latitude": 1.31881487007651,
+                "longitude": 103.892580778514
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 27
+    },
+    "Good Old Days": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "60 Siloso Beach Walk #- Singapore 098997",
+            "coords": {
+                "latitude": 1.25170699462885,
+                "longitude": 103.817162874792
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 24
+    },
+    "Oldtown White Coffee": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "10 Sinaran Drive, Square 2 #01-01/02 Singapore 307506",
+            "coords": {
+                "latitude": 1.32070510956845,
+                "longitude": 103.844160709661
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Oldtown White Coffee (2)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "902 East Coast Parkway, Area B, Coastal Playgrove #01-03 Singapore 449874",
+            "coords": {
+                "latitude": 1.29690169591241,
+                "longitude": 103.899692908286
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 30
+    },
+    "Oldtown White Coffee (3)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "180 Kitchener Road, City Square Mall #B1-31/32 Singapore 208539",
+            "coords": {
+                "latitude": 1.3113827185663,
+                "longitude": 103.856626855768
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 26
+    },
+    "Oldtown White Coffee (4)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "1 Stadium Place, Kallang Wave Mall #01-18/19 Singapore 397628",
+            "coords": {
+                "latitude": 1.30307515205147,
+                "longitude": 103.873149707591
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Papparich": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "30 Stevens Road, Novotel on Stevens #01-06 Singapore 257840",
+            "coords": {
+                "latitude": 1.31386945443377,
+                "longitude": 103.828606363886
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 16
+    },
+    "Papparich (2)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "80 Marine Parade Road, Parkway Parade #01-17A Singapore 449269",
+            "coords": {
+                "latitude": 1.30106975506311,
+                "longitude": 103.905279491524
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 15
+    },
+    "Papparich (3)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "3 Gateway Drive, Westgate #03-06 Singapore 608532",
+            "coords": {
+                "latitude": 1.33415752008876,
+                "longitude": 103.742766489597
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 11
+    },
+    "Papparich (4)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "83 Punggol Central, Waterway Point #B1-17 Singapore 828761",
+            "coords": {
+                "latitude": 1.40637933605759,
+                "longitude": 103.902172248289
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Pizza Hut": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "21 Ghim Moh #01-215 Singapore 270021",
+            "coords": {
+                "latitude": 1.31010302594118,
+                "longitude": 103.788545950724
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 19
+    },
+    "Pizza Hut (2)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "85 Lorong 4 Toa Payoh #01-360 Singapore 310085",
+            "coords": {
+                "latitude": 1.33628536216028,
+                "longitude": 103.848428644103
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 13
+    },
+    "Pizza Hut (3)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "162 Bukit Merah Central #01-3555 Singapore 150162",
+            "coords": {
+                "latitude": 1.28383730148701,
+                "longitude": 103.81746608298
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 24
+    },
+    "Pizza Hut (4)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "557 Bukit Timah Road, Crown Centre #01-17 Singapore 269694",
+            "coords": {
+                "latitude": 1.32304666837659,
+                "longitude": 103.811160666737
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Pizza Hut (5)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "23 Simon Road #01-00 Singapore 545906",
+            "coords": {
+                "latitude": 1.36283341975018,
+                "longitude": 103.884691017109
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Pizza Hut (6)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "66 Kallang Bahru #01-473 Singapore 330066",
+            "coords": {
+                "latitude": 1.32053917107956,
+                "longitude": 103.86969083666
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 20
+    },
+    "Pizza Hut (7)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "9 Sentul Crescent, SAFRA Punggol #02-01 Singapore 828654",
+            "coords": {
+                "latitude": 1.41019488801342,
+                "longitude": 103.906072212007
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 18
+    },
+    "Pizza Hut (8)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "2 Havelock Road, Havelock II #B1-12 Singapore 059763",
+            "coords": {
+                "latitude": 1.28715061616661,
+                "longitude": 103.845153736863
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 24
+    },
+    "Pizza Hut (9)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "1 Sengkang Square, Compass One #01-15 Singapore 545078",
+            "coords": {
+                "latitude": 1.3920543053799,
+                "longitude": 103.895063884132
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 24
+    },
+    "Pizza Hut (10)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "1 Jelebu Road, Bukit Panjang Plaza #02-14 Singapore 677743",
+            "coords": {
+                "latitude": 1.37992045176243,
+                "longitude": 103.764357180314
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 14
+    },
+    "Pizza Hut (11)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "1 Woodlands Square, Causeway Point #B1-25 Singapore 738099",
+            "coords": {
+                "latitude": 1.43592702612215,
+                "longitude": 103.786047454862
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 21
+    },
+    "Pizza Hut (12)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "180 Kitchener Road, City Square Mall #01-19 Singapore 208539",
+            "coords": {
+                "latitude": 1.3113827185663,
+                "longitude": 103.856626855768
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 11
+    },
+    "Pizza Hut (13)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "3 Simei Street 6, Eastpoint Mall #02-03 Singapore 528833",
+            "coords": {
+                "latitude": 1.34269199750599,
+                "longitude": 103.953050756306
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 20
+    },
+    "Pizza Hut (14)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "68 Orchard Road, Plaza Singapura #B2-01 Singapore 757713",
+            "coords": {
+                "latitude": 1.44819436804175,
+                "longitude": 103.819464386349
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "Pizza Hut (15)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "30 Sembawang Drive, Sun Plaza #02-15 Singapore 757713",
+            "coords": {
+                "latitude": 1.44819436804175,
+                "longitude": 103.819464386349
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 14
+    },
+    "Pizza Hut (16)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "301 Upper Thomson Road, Thomson Plaza #02-24 Singapore 574408",
+            "coords": {
+                "latitude": 1.35479436177561,
+                "longitude": 103.830924910072
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 22
+    },
+    "Pizza Hut (17)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "190 Toa Payoh Lorong 6, The Seletar Mall #02-516A Singapore 310190",
+            "coords": {
+                "latitude": 1.33297913475343,
+                "longitude": 103.848704963894
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 25
+    },
+    "Pizza Hut (18)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "83 Punggol Central, Waterway Point #B1-11 Singapore 828761",
+            "coords": {
+                "latitude": 1.40637933605759,
+                "longitude": 103.902172248289
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 23
+    },
+    "Pizza Hut (19)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "76 Nanyang Drive, Nanyang Technological University, Block N2 #01-04 Singapore 637331",
+            "coords": {
+                "latitude": 1.34713048855579,
+                "longitude": 103.680033789538
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 24
+    },
+    "Pizza Hut (20)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "120 Maxwell Road, Tanjong Pagar MRT Station #B1-36 Singapore 069119",
+            "coords": {
+                "latitude": 1.27660857408421,
+                "longitude": 103.846006679223
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 19
+    },
+    "Pizza Hut (21)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "2 College Avenue West, National University of Singapore, University Town Edusports #01-04 Singapore 138607",
+            "coords": {
+                "latitude": 1.30468715591358,
+                "longitude": 103.772449740167
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 17
+    },
+    "Pizza Hut (22)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "802 Bukit Gombak West Avenue 5, Bukit Gombak MRT Station #01-10 Singapore 659083",
+            "coords": {
+                "latitude": 1.35871216207818,
+                "longitude": 103.751883836125
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 28
+    },
+    "Pizza Hut (23)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "5 Arts Link, National University of Singapore, The Deck #01-00 Singapore 117570",
+            "coords": {
+                "latitude": 1.29420123079353,
+                "longitude": 103.771071581804
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 27
+    },
+    "Pizza Hut (24)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "2 Jurong East Street 21, IMM Building #01-41 Singapore 609601",
+            "coords": {
+                "latitude": 1.33491758755437,
+                "longitude": 103.746877132868
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["Obesity", "Halal"],
+        "endorsement": "HPB",
+        "rating": 10
+    },
+    "The Butcher'S Wife": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "19 Yong Siak Street, Singapore 168650",
+            "coords": {
+                "latitude": 1.28273291506553,
+                "longitude": 103.830114614569
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["No Gluten"],
+        "endorsement": "Community (General)",
+        "rating": 17
+    },
+    "Super Loco Customs House": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "70 Collyer Quay, #01-14 Customs House Singapore 049323",
+            "coords": {
+                "latitude": 1.28250872626601,
+                "longitude": 103.853557170034
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["No Gluten"],
+        "endorsement": "Community (General)",
+        "rating": 23
+    },
+    "Super Loco Robertson Quay": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "The Quayside, 60 Robertson Quay #01-13 Singapore 238252",
+            "coords": {
+                "latitude": 1.29008339576408,
+                "longitude": 103.839199219609
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["No Gluten"],
+        "endorsement": "Community (General)",
+        "rating": 21
+    },
+    "Lucha Loco": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "15 Duxton Hill, Singapore 089598",
+            "coords": {
+                "latitude": 1.27878260223528,
+                "longitude": 103.842593351562
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["No Gluten"],
+        "endorsement": "Community (General)",
+        "rating": 18
+    },
+    "Chico Loco": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "102 Amoy Street, Singapore 069922",
+            "coords": {
+                "latitude": 1.28168763505227,
+                "longitude": 103.847282032792
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["No Gluten"],
+        "endorsement": "Community (General)",
+        "rating": 24
+    },
+    "Entre-Nous": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "27, Seah Street #01-01 Singapore 188383",
+            "coords": {
+                "latitude": 1.29629320808815,
+                "longitude": 103.854675583227
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["No Gluten"],
+        "endorsement": "Community (General)",
+        "rating": 26
+    },
+    "The Soup Spoon": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "Bugis Junction #B1-K24A Singapore 188021",
+            "coords": {
+                "latitude": null,
+                "longitude": null
+            }
+        },
+        "goals": [],
+        "dietary requirements": ["No Gluten"],
+        "endorsement": "Community (General)",
+        "rating": 10
+    },
+    "Wellsmoocht": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "319 Jurong East Street 31, #01-58 Singapore 600319",
+            "coords": {
+                "latitude": 1.34798942321199,
+                "longitude": 103.7304582035
+            }
+        },
+        "goals": ["Vegetarian"],
+        "dietary requirements": ["No Lactose", "No Seafood"],
+        "endorsement": "Community (General)",
+        "rating": 16
+    },
+    "Veganburg": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "44 JALAN EUNOS Singapore 419502",
+            "coords": {
+                "latitude": 1.32097941187296,
+                "longitude": 103.905512552867
+            }
+        },
+        "goals": ["Vegetarian"],
+        "dietary requirements": ["No Lactose", "No Seafood"],
+        "endorsement": "Community (General)",
+        "rating": 14
+    },
+    "Veganburg (2)": {
+        "type": "restaurant",
+        "address": {
+            "formatted": "11 BIDADARI PARK DR, #01-37 Singapore 367803",
+            "coords": {
+                "latitude": 1.33869419209869,
+                "longitude": 103.871750105256
+            }
+        },
+        "goals": ["Vegetarian"],
+        "dietary requirements": ["No Lactose", "No Seafood"],
+        "endorsement": "Community (General)",
+        "rating": 18
+    }
+}

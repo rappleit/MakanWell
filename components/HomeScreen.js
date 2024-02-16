@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {
     View,
     Text,
@@ -6,6 +6,8 @@ import {
     Image,
     ScrollView,
     TouchableOpacity,
+    Platform,
+    PermissionsAndroid,
 } from "react-native";
 import {SafeAreaView} from "react-native-safe-area-context";
 import {NavigationContainer} from "@react-navigation/native";
@@ -17,6 +19,31 @@ import {EateriesScreen} from "./EateriesScreen";
 
 export function HomeScreen({navigation}) {
     const Tab = createMaterialTopTabNavigator();
+    const [locPermission, setLocPermission] = useState(false);
+
+    const getLocationPermission = async () => {
+        if (Platform.OS === "android") {
+            try {
+                const granted = await PermissionsAndroid.request(
+                    PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+                    {
+                        title: "Location Permission",
+                        message:
+                            "Please allow Location Permission to use this feature...",
+                        buttonNeutral: "Ask Me Later",
+                        buttonNegative: "Cancel",
+                        buttonPositive: "OK",
+                    }
+                );
+                if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+                    setLocPermission(true);
+                }
+            } catch (err) {
+                console.warn(err);
+            }
+        }
+    };
+    if (!locPermission) getLocationPermission();
 
     return (
         <SafeAreaView edges={["left", "right", "bottom"]} style={{flex: 1}}>

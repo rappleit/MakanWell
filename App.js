@@ -1,24 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Tabs from './navigation/Tabs';
+import {StyleSheet, Text, View} from "react-native";
+import {NavigationContainer} from "@react-navigation/native";
+import Tabs from "./navigation/Tabs";
+import {enableLatestRenderer} from "react-native-maps";
 
-
+enableLatestRenderer();
 
 export default function App() {
-  return (
-    <NavigationContainer>
-      <Tabs/>
-    </NavigationContainer>
-  )
+    return (
+        <NavigationContainer>
+            <Tabs />
+        </NavigationContainer>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: "center",
+    },
 });

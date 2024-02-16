@@ -34,7 +34,7 @@ const profiles = {
         Hypoglycaemia:
             "Also known as Low blood sugar, is a condition resulting when the blood glucose levels drop below the specified limits (4 mmol/L or 72mg/dL). It causes irregular or rapid heartbeat, pale skin, numbness of lips, tongue or cheek, and sweating.",
         Bloating:
-            "A feeling of tightness, pressure, or fullness in your belly, often caused by excess gas123. It can make your stomach appear larger and clothes feel tighter. Bloating may be caused by how and what you eat, abnormal reactions to food, or certain medical conditions.",
+            "A feeling of tightness, pressure, or fullness in your belly, often caused by excess gas. It can make your stomach appear larger and clothes feel tighter. Bloating may be caused by how and what you eat, abnormal reactions to food, or certain medical conditions.",
         Obesity:
             "Obesity is a long-term health condition characterized by excess body fat, commonly measured by BMI.",
         "Iron Deficiency Anaemia":
