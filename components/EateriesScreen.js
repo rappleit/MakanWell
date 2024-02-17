@@ -1,18 +1,28 @@
 import React, {useEffect, useState} from "react";
-import {View, Text, StyleSheet, TouchableOpacity} from "react-native";
+import {
+    View,
+    Text,
+    StyleSheet,
+    TouchableOpacity,
+    ScrollView,
+} from "react-native";
 import MapView, {PROVIDER_GOOGLE} from "react-native-maps";
 import {Marker} from "react-native-maps";
 import {Image} from "react-native";
-import places from "../assets/places.json";
+import p from "../assets/places.json";
 import * as Location from "expo-location";
 import Geocoder from "react-native-geocoding";
 import {FontAwesome} from "@expo/vector-icons";
-import {Dropdown} from "react-native-material-dropdown";
 
 const APIKEY = "";
 const ORIGIN = {
     coords: {latitude: 1.29298990700923, longitude: 103.852542630339},
 };
+function sortByDistance(a, b) {
+    const detailsA = Object.values(a)[0];
+    const detailsB = Object.values(b)[0];
+    return detailsA.distanceFromOrigin - detailsB.distanceFromOrigin;
+}
 const OriginMarker = () => (
     <Image
         style={{width: 80, height: 80}}
@@ -25,57 +35,16 @@ export function EateriesScreen() {
     const [originName, setOriginName] = useState(null);
     const [originPostalcode1d, setOriginPostalcode1d] = useState(null);
     const [sortedMarkers, setSortedMarkers] = useState([]);
-    useEffect(() => {
-        getLocation();
-    }, []);
-    useEffect(() => {
-        const tempMarkers = [];
-        Object.entries(places)
-            .filter(([place, details]) => {
-                const placePostalcode1d = details.address.formatted
-                    .split("Singapore ")[1]
-                    .match(/\d/)[0];
-                return placePostalcode1d === originPostalcode1d;
-            })
-            .map(([place, details]) => {
-                return {[place]: details};
-            })
-            .slice(0, 3)
-            .forEach((marker, i) => {
-                const place = Object.keys(marker)[0];
-                const details = marker[place];
 
-                getDistance(
-                    `${ORIGIN["coords"]["longitude"]},${ORIGIN["coords"]["latitude"]};${details["address"]["coords"]["longitude"]},${details["address"]["coords"]["latitude"]}`
-                ).then((res) => {
-                    setSortedMarkers((prevValues) => [
-                        ...prevValues,
-                        {
-                            [place]: {...details, distanceFromOrigin: res},
-                        },
-                    ]);
-                    tempMarkers[i] = {
-                        [place]: {...details, distanceFromOrigin: res},
-                    };
-                });
-                setTimeout(() => {
-                    tempMarkers.sort((a, b) => {
-                        const detailsA = Object.values(a)[0];
-                        const detailsB = Object.values(b)[0];
-                        return (
-                            detailsA.distanceFromOrigin -
-                            detailsB.distanceFromOrigin
-                        );
-                    });
-                    setSortedMarkers((prevValues) => [
-                        ...prevValues,
-                        ...tempMarkers,
-                    ]);
-                });
-            }, 500);
-    }, [originName]);
+    const [filteredMarkers, setFilteredMarkers] = useState(sortedMarkers);
+    const [filterTypes, setFilterTypes] = useState([]);
+    const [showFilterOptions, setShowFilterOptions] = useState(false);
 
-    const getLocation = () => {
+    const places = Object.entries(p).map(([place, details]) => {
+        return {[place]: details};
+    });
+
+    useEffect(() => {
         Location.getCurrentPositionAsync().then((res) => {
             console.log(JSON.stringify(res));
 
@@ -99,7 +68,35 @@ export function EateriesScreen() {
                 setOriginName(name);
             })
             .catch((error) => console.error(error));
-    };
+    }, []);
+
+    useEffect(() => {
+        places
+            .filter((ele) => {
+                const [[place, details]] = Object.entries(ele);
+                const placePostalcode1d = details.address.formatted
+                    .split("Singapore ")[1]
+                    .match(/\d/)[0];
+                return placePostalcode1d === originPostalcode1d;
+            })
+            .slice(0, 3)
+            .forEach((marker) => {
+                const place = Object.keys(marker)[0];
+                const details = marker[place];
+
+                getDistance(
+                    `${ORIGIN["coords"]["longitude"]},${ORIGIN["coords"]["latitude"]};${details["address"]["coords"]["longitude"]},${details["address"]["coords"]["latitude"]}`
+                ).then((res) => {
+                    setSortedMarkers((prevValues) => [
+                        ...prevValues,
+                        {
+                            [place]: {...details, distanceFromOrigin: res},
+                        },
+                    ]);
+                });
+            });
+        setSortedMarkers(sortedMarkers.sort(sortByDistance));
+    }, [originName]);
 
     const getDistance = (coords) => {
         // coords in form lng1,lat1;lng2,lat2
@@ -126,6 +123,137 @@ export function EateriesScreen() {
             .catch((error) => console.error(error));
     };
 
+    const toggleFilterType = (type) => {
+        if (filterTypes.includes(type)) {
+            // Remove type if already selected
+            setFilterTypes(filterTypes.filter((item) => item !== type));
+            setFilteredMarkers(
+                filteredMarkers.filter((ele) => {
+                    const [[place, details]] = Object.entries(ele);
+                    return details["type"] !== type;
+                })
+            );
+        } else {
+            // Add type if not already selected
+            setFilterTypes([...filterTypes, type]);
+            const nearestByPostalcodes = places
+                .filter((ele) => {
+                    const [[place, details]] = Object.entries(ele);
+                    const placePostalcode1d = details.address.formatted
+                        .split("Singapore ")[1]
+                        .match(/\d/)[0];
+                    return placePostalcode1d === originPostalcode1d;
+                })
+
+                .filter((details) => Object.values(details)[0][type] === type);
+            const nearest =
+                nearestByPostalcodes.length > 0 ? nearestByPostalcodes : places;
+            nearest
+                .filter((details) => Object.values(details)[0]["type"] === type)
+                .slice(0, 3)
+                .forEach((marker) => {
+                    const place = Object.keys(marker)[0];
+                    const details = marker[place];
+
+                    getDistance(
+                        `${ORIGIN["coords"]["longitude"]},${ORIGIN["coords"]["latitude"]};${details["address"]["coords"]["longitude"]},${details["address"]["coords"]["latitude"]}`
+                    ).then((res) => {
+                        setFilteredMarkers((prevValues) => [
+                            ...prevValues,
+                            {
+                                [place]: {...details, distanceFromOrigin: res},
+                            },
+                        ]);
+                    });
+                });
+            setFilteredMarkers(filteredMarkers.sort(sortByDistance));
+        }
+    };
+
+    const renderFilterOptions = () => {
+        const filterOptions = ["Hawker Centre", "Restaurant", "Cafe"];
+        return (
+            <View style={styles.filterOptionContainer}>
+                {filterOptions.map((option, i) => (
+                    <TouchableOpacity
+                        key={i}
+                        onPress={() => toggleFilterType(option.toLowerCase())}
+                        style={styles.filterOption}
+                    >
+                        <FontAwesome
+                            name={
+                                filterTypes.includes(option.toLowerCase())
+                                    ? "check-square"
+                                    : "square-o"
+                            }
+                            size={24}
+                            color="black"
+                        />
+                        <Text style={styles.filterOptionText}>{option}</Text>
+                    </TouchableOpacity>
+                ))}
+            </View>
+        );
+    };
+
+    const renderMarkers = () => {
+        const markersToRender =
+            filterTypes.length > 0 ? filteredMarkers : sortedMarkers;
+        return markersToRender.map((ele, i) => {
+            const [[place, details]] = Object.entries(ele);
+            console.log({[place]: details});
+            return (
+                <Marker
+                    key={i}
+                    coordinate={details["address"]["coords"]}
+                    title={place}
+                    description={details["address"]["formatted"]}
+                />
+            );
+        });
+    };
+
+    const renderMarkersPlaces = () => {
+        const placesToRender =
+            filterTypes.length > 0 ? filteredMarkers : sortedMarkers;
+        return placesToRender.length > 0 ? (
+            placesToRender.slice(0, 2).map((ele, i) => {
+                const [[place, details]] = Object.entries(ele);
+                return (
+                    <View style={styles.object} key={i}>
+                        <View style={styles.imageContainer}>
+                            <Image
+                                source={require("../assets/dish1.png")}
+                                style={styles.image}
+                            />
+                        </View>
+                        <View style={styles.textContainer}>
+                            <Text style={styles.nameText}>{place}</Text>
+                            <Text style={styles.detailsText}>
+                                {(details["distanceFromOrigin"] / 1000).toFixed(
+                                    1
+                                )}
+                                {"km"} | {details["rating"]} 💬
+                            </Text>
+                            <Text style={styles.goalsText}>
+                                {details["goals"].join(", ")}
+                                {details["goals"].length > 0 ? ", " : ""}
+                                {details["dietary requirements"].join(
+                                    ", "
+                                )}{" "}
+                                Options
+                            </Text>
+                        </View>
+                    </View>
+                );
+            })
+        ) : filterTypes.length > 0 ? (
+            <Text>No Recommendations, try another filter?</Text>
+        ) : (
+            <Text>Loading...</Text>
+        );
+    };
+
     return (
         <View style={styles.container}>
             <View style={styles.mapContainer}>
@@ -140,20 +268,7 @@ export function EateriesScreen() {
                             longitudeDelta: 0.0121,
                         }}
                     >
-                        {sortedMarkers.map((ele, i) => {
-                            const [[place, details]] = Object.entries(ele);
-                            console.log({[place]: details});
-                            return (
-                                <Marker
-                                    key={i}
-                                    coordinate={details["address"]["coords"]}
-                                    title={place}
-                                    description={
-                                        details["address"]["formatted"]
-                                    }
-                                />
-                            );
-                        })}
+                        {renderMarkers()}
 
                         <Marker
                             coordinate={{
@@ -168,71 +283,32 @@ export function EateriesScreen() {
                 ) : (
                     <Text>Loading...</Text>
                 )}
-                <View style={styles.locationContainer}>
-                    <Text style={styles.locationText}>Location:</Text>
-                    <Text
-                        style={styles.locationText}
-                        numberOfLines={1}
-                        ellipsizeMode="tail"
+                <View>
+                    <TouchableOpacity
+                        style={styles.filterBtn}
+                        onPress={() => setShowFilterOptions(!showFilterOptions)}
                     >
-                        {originName || "Loading..."}
-                    </Text>
+                        <FontAwesome name="filter" size={24} color="black" />
+                    </TouchableOpacity>
+                    <View style={styles.locationContainer}>
+                        <Text
+                            style={styles.locationText}
+                            numberOfLines={1}
+                            ellipsizeMode="tail"
+                        >
+                            Location: {originName || "Loading..."}
+                        </Text>
+                    </View>
+
+                    {showFilterOptions && renderFilterOptions()}
                 </View>
             </View>
-            <TouchableOpacity onPress={() => handleFilterMarkers(filterType)}>
-                <FontAwesome name="filter" size={24} color="black" />
-            </TouchableOpacity>
-
-            <Dropdown
-                label="Filter by Type"
-                data={filterOptions}
-                onChangeText={(value) => {
-                    if (value) {
-                        handleFilterMarkers(value);
-                    } else {
-                        setFilteredMarkers(sortedMarkers); // Show all markers if no filter selected
-                        setFilterType(null);
-                    }
-                }}
-            />
             <View style={styles.recommendationContainer}>
                 <Text style={styles.recommendationText}>
                     Recommendations Near You
                 </Text>
             </View>
-            <View style={styles.objectContainer}>
-                {sortedMarkers ? (
-                    sortedMarkers.slice(0, 2).map((ele, i) => {
-                        const [[place, details]] = Object.entries(ele);
-                        return (
-                            <View style={styles.object} key={i}>
-                                <View style={styles.imageContainer}>
-                                    <Image
-                                        source={require("../assets/dish1.png")}
-                                        style={styles.image}
-                                    />
-                                </View>
-                                <View style={styles.textContainer}>
-                                    <Text style={styles.nameText}>{place}</Text>
-                                    <Text style={styles.detailsText}>
-                                        {(
-                                            details["distanceFromOrigin"] / 1000
-                                        ).toFixed(1)}
-                                        {"km"}| {details["rating"]} 💬
-                                    </Text>
-                                    <Text style={styles.goalsText}>
-                                        {details["goals"]},{" "}
-                                        {details["dietary requirements"]}{" "}
-                                        Options
-                                    </Text>
-                                </View>
-                            </View>
-                        );
-                    })
-                ) : (
-                    <Text>Loading...</Text>
-                )}
-            </View>
+            <View style={styles.objectContainer}>{renderMarkersPlaces()}</View>
         </View>
     );
 }
@@ -255,12 +331,27 @@ const styles = StyleSheet.create({
         padding: 5,
         margin: 10,
         borderRadius: 12,
-        flexDirection: "row",
+        right: 0,
+        width: "85%",
     },
     locationText: {
         fontSize: 16,
         fontWeight: "bold",
-        flex: 1,
+    },
+    filterBtn: {
+        padding: 5,
+        margin: 10,
+    },
+    filterOptionContainer: {
+        paddingLeft: 15,
+    },
+    filterOption: {
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    filterOptionText: {
+        marginLeft: 5,
+        fontSize: 16,
     },
     recommendationContainer: {
         alignItems: "center",
