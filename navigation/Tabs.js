@@ -10,6 +10,7 @@ import FindIngredients from "../components/FindIngredients";
 import DishAnalyser from "../components/DishAnalyser";
 import EditGoals from "../components/EditGoals";
 import RewardsScreen from "../components/RewardsScreen";
+import {CommunityScreen} from "../components/CommunityScreen";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -65,6 +66,26 @@ function ProfileStackNavigator() {
             <Stack.Screen
                 name="EditGoals"
                 component={EditGoals}
+                options={{
+                    headerShown: false,
+                }}
+            />
+        </Stack.Navigator>
+    );
+}
+function CommunityStackNavigator() {
+    return (
+        <Stack.Navigator>
+            <Stack.Screen
+                name="CommunityScreen"
+                component={CommunityScreen}
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen
+                name="CommunityPost"
+                component={CommunityPost}
                 options={{
                     headerShown: false,
                 }}
