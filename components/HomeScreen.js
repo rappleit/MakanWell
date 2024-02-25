@@ -167,7 +167,7 @@ export function HomeScreen({navigation}) {
                 </View>
             </ScrollView>
             <TouchableOpacity
-                style={styles.addButton}
+                style={styles.cameraButton}
                 onPress={() => navigation.navigate("AddDish")}
             >
                 <Icon name={"camera"} color={"#FFF"} size={24} />
@@ -272,7 +272,7 @@ const styles = StyleSheet.create({
         height: "100%",
         width: 100,
     },
-    addButton: {
+    cameraButton: {
         position: "absolute",
         bottom: 20,
         right: 20,

@@ -13,6 +13,7 @@ import RewardsScreen from "../components/RewardsScreen";
 import EditProfile from "../components/EditProfile";
 import Login from "../components/Login";
 import Signup from "../components/Signup";
+import {CommunityScreen} from "../components/CommunityScreen";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -89,6 +90,26 @@ function ProfileStackNavigator() {
             <Stack.Screen
                 name="Signup"
                 component={Signup}
+                options={{
+                    headerShown: false,
+                }}
+            />
+        </Stack.Navigator>
+    );
+}
+function CommunityStackNavigator() {
+    return (
+        <Stack.Navigator>
+            <Stack.Screen
+                name="CommunityScreen"
+                component={CommunityScreen}
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen
+                name="CommunityPost"
+                component={CommunityPost}
                 options={{
                     headerShown: false,
                 }}
