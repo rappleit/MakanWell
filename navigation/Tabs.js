@@ -10,6 +10,9 @@ import FindIngredients from "../components/FindIngredients";
 import DishAnalyser from "../components/DishAnalyser";
 import EditGoals from "../components/EditGoals";
 import RewardsScreen from "../components/RewardsScreen";
+import EditProfile from "../components/EditProfile";
+import Login from "../components/Login";
+import Signup from "../components/Signup";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -43,7 +46,7 @@ function HomeStackNavigator() {
                 }}
             />
             <Stack.Screen
-                name="DishAnalyser"
+                name="Your Meal Insights"
                 component={DishAnalyser}
                 options={{
                     headerShown: true,
@@ -69,6 +72,27 @@ function ProfileStackNavigator() {
                     headerShown: false,
                 }}
             />
+            <Stack.Screen
+                name="Edit Profile"
+                component={EditProfile}
+                options={{
+                    headerShown: true,
+                }}
+            />
+            <Stack.Screen
+                name="Login"
+                component={Login}
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen
+                name="Signup"
+                component={Signup}
+                options={{
+                    headerShown: false,
+                }}
+            />
         </Stack.Navigator>
     );
 }
@@ -78,46 +102,19 @@ const Tabs = () => {
             screenOptions={{
                 headerShown: false,
                 tabBarActiveTintColor: COLORS.primary,
-                tabBarStyle: {height: 60},
-                tabBarLabelStyle: {marginBottom: 6},
-            }}
-        >
-            <Tab.Screen
-                name="Home"
-                component={HomeStackNavigator}
-                options={{
-                    tabBarIcon: ({size, color}) => (
-                        <Icon name={"home"} color={color} size={size} />
-                    ),
-                }}
-            />
-            <Tab.Screen
-                name="Discover"
-                component={DiscoverScreen}
-                options={{
-                    tabBarIcon: ({size, color}) => (
-                        <Icon name={"search"} color={color} size={size} />
-                    ),
-                }}
-            />
-            <Tab.Screen
-                name="Rewards"
-                component={RewardsScreen}
-                options={{
-                    tabBarIcon: ({size, color}) => (
-                        <Icon name={"star"} color={color} size={size} />
-                    ),
-                }}
-            />
-            <Tab.Screen
-                name="Profile"
-                component={ProfileStackNavigator}
-                options={{
-                    tabBarIcon: ({size, color}) => (
-                        <Icon name={"user"} color={color} size={size} />
-                    ),
-                }}
-            />
+                tabBarStyle: { height: 75 },
+                tabBarLabelStyle: { marginBottom: 6 }
+            }}>
+            <Tab.Screen name="Home" component={HomeStackNavigator} options={{
+                tabBarIcon: ({ size, color }) => (<Icon name={"home"} color={color} size={size} />)
+            }} />
+            <Tab.Screen name="Discover" component={DiscoverScreen} options={{
+                tabBarIcon: ({ size, color }) => (<Icon name={"search"} color={color} size={size} />)
+            }} />
+            <Tab.Screen name="Profile" component={ProfileStackNavigator} options={{
+                tabBarIcon: ({ size, color }) => (<Icon name={"user"} color={color} size={size} />)
+            }} />
+
         </Tab.Navigator>
     );
 };

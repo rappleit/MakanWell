@@ -14,10 +14,8 @@ import * as Location from "expo-location";
 import Geocoder from "react-native-geocoding";
 import {FontAwesome} from "@expo/vector-icons";
 
-const APIKEY = "";
-const ORIGIN = {
-    coords: {latitude: 1.29298990700923, longitude: 103.852542630339},
-};
+const APIKEY = process.env.GOOGLE_API_KEY;
+
 function sortByDistance(a, b) {
     const detailsA = Object.values(a)[0];
     const detailsB = Object.values(b)[0];
@@ -54,20 +52,19 @@ export function EateriesScreen() {
                     longitude: res["coords"]["longitude"],
                 },
             });
-        });
-
-        Geocoder.from({
-            latitude: ORIGIN["coords"]["latitude"],
-            longitude: ORIGIN["coords"]["longitude"],
-        })
-            .then((res) => {
-                const name = res.results[0].formatted_address;
-                setOriginPostalcode1d(
-                    name.split("Singapore ")[1].match(/\d/)[0]
-                );
-                setOriginName(name);
+            Geocoder.from({
+                latitude: res["coords"]["latitude"],
+                longitude: res["coords"]["longitude"],
             })
-            .catch((error) => console.error(error));
+                .then((res) => {
+                    const name = res.results[0].formatted_address;
+                    setOriginPostalcode1d(
+                        name.split("Singapore ")[1].match(/\d/)[0]
+                    );
+                    setOriginName(name);
+                })
+                .catch((error) => console.error(error));
+        });
     }, []);
 
     useEffect(() => {
@@ -85,7 +82,7 @@ export function EateriesScreen() {
                 const details = marker[place];
 
                 getDistance(
-                    `${ORIGIN["coords"]["longitude"]},${ORIGIN["coords"]["latitude"]};${details["address"]["coords"]["longitude"]},${details["address"]["coords"]["latitude"]}`
+                    `${origin["coords"]["longitude"]},${origin["coords"]["latitude"]};${details["address"]["coords"]["longitude"]},${details["address"]["coords"]["latitude"]}`
                 ).then((res) => {
                     setSortedMarkers((prevValues) => [
                         ...prevValues,
@@ -156,7 +153,7 @@ export function EateriesScreen() {
                     const details = marker[place];
 
                     getDistance(
-                        `${ORIGIN["coords"]["longitude"]},${ORIGIN["coords"]["latitude"]};${details["address"]["coords"]["longitude"]},${details["address"]["coords"]["latitude"]}`
+                        `${origin["coords"]["longitude"]},${origin["coords"]["latitude"]};${details["address"]["coords"]["longitude"]},${details["address"]["coords"]["latitude"]}`
                     ).then((res) => {
                         setFilteredMarkers((prevValues) => [
                             ...prevValues,
@@ -217,36 +214,38 @@ export function EateriesScreen() {
         const placesToRender =
             filterTypes.length > 0 ? filteredMarkers : sortedMarkers;
         return placesToRender.length > 0 ? (
-            placesToRender.slice(0, 2).map((ele, i) => {
-                const [[place, details]] = Object.entries(ele);
-                return (
-                    <View style={styles.object} key={i}>
-                        <View style={styles.imageContainer}>
-                            <Image
-                                source={require("../assets/dish1.png")}
-                                style={styles.image}
-                            />
+            <ScrollView>
+                {placesToRender.slice(0, 4).map((ele, i) => {
+                    const [[place, details]] = Object.entries(ele);
+                    return (
+                        <View style={styles.object} key={i}>
+                            <View style={styles.imageContainer}>
+                                <Image
+                                    source={require("../assets/dish1.png")}
+                                    style={styles.image}
+                                />
+                            </View>
+                            <View style={styles.textContainer}>
+                                <Text style={styles.nameText}>{place}</Text>
+                                <Text style={styles.detailsText}>
+                                    {(
+                                        details["distanceFromOrigin"] / 1000
+                                    ).toFixed(1)}
+                                    {"km"} | {details["rating"]} 💬
+                                </Text>
+                                <Text style={styles.goalsText}>
+                                    {details["goals"].join(", ")}
+                                    {details["goals"].length > 0 ? ", " : ""}
+                                    {details["dietary requirements"].join(
+                                        ", "
+                                    )}{" "}
+                                    Options
+                                </Text>
+                            </View>
                         </View>
-                        <View style={styles.textContainer}>
-                            <Text style={styles.nameText}>{place}</Text>
-                            <Text style={styles.detailsText}>
-                                {(details["distanceFromOrigin"] / 1000).toFixed(
-                                    1
-                                )}
-                                {"km"} | {details["rating"]} 💬
-                            </Text>
-                            <Text style={styles.goalsText}>
-                                {details["goals"].join(", ")}
-                                {details["goals"].length > 0 ? ", " : ""}
-                                {details["dietary requirements"].join(
-                                    ", "
-                                )}{" "}
-                                Options
-                            </Text>
-                        </View>
-                    </View>
-                );
-            })
+                    );
+                })}
+            </ScrollView>
         ) : filterTypes.length > 0 ? (
             <Text>No Recommendations, try another filter?</Text>
         ) : (
@@ -262,8 +261,8 @@ export function EateriesScreen() {
                         provider={PROVIDER_GOOGLE}
                         style={styles.map}
                         region={{
-                            latitude: ORIGIN["coords"]["latitude"],
-                            longitude: ORIGIN["coords"]["longitude"],
+                            latitude: origin["coords"]["latitude"],
+                            longitude: origin["coords"]["longitude"],
                             latitudeDelta: 0.015,
                             longitudeDelta: 0.0121,
                         }}
@@ -272,8 +271,8 @@ export function EateriesScreen() {
 
                         <Marker
                             coordinate={{
-                                latitude: ORIGIN["coords"]["latitude"],
-                                longitude: ORIGIN["coords"]["longitude"],
+                                latitude: origin["coords"]["latitude"],
+                                longitude: origin["coords"]["longitude"],
                             }}
                             title="You are here"
                         >

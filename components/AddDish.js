@@ -5,6 +5,7 @@ import { Camera } from 'expo-camera';
 import { COLORS } from '../colors';
 import * as MediaLibrary from 'expo-media-library';
 import * as ImagePicker from 'expo-image-picker';
+import { manipulateAsync, FlipType, SaveFormat } from 'expo-image-manipulator';
 
 
 
@@ -28,7 +29,11 @@ const AddDish = ({ navigation }) => {
     });
 
     if (!result.canceled) {
-      setImage(result.assets[0].uri);
+      compressedImg = await manipulateAsync(
+        result.assets[0].uri, [{resize: {width: 250}}],
+        { compress: 1 }
+      );
+      setImage(compressedImg.uri);
     }
   };
 
@@ -41,12 +46,15 @@ const AddDish = ({ navigation }) => {
 
 
       allowsEditing: true,
-      aspect: [4, 3],
       quality: 1,
     });
 
     if (!result.canceled) {
-      setImage(result.assets[0].uri);
+      compressedImg = await manipulateAsync(
+        result.assets[0].uri, [{resize: {width: 300}}],
+        { compress: 1 }
+      );
+      setImage(compressedImg.uri);
     }
   };
 
@@ -59,11 +67,11 @@ const AddDish = ({ navigation }) => {
         <TouchableOpacity onPress={pickFromLibrary} style={{ marginTop: 20, padding: 10, borderRadius: 10, backgroundColor: COLORS.primary }}>
           <Text style={{fontSize: 18, fontWeight: "bold"}}>Select from Library</Text>
         </TouchableOpacity>
-        {image && (
+        {(image) ? (
           <>
             <Image
               source={{ uri: image }}
-              style={{ width: 200, height: 200, marginTop: 20 }}
+              style={{ width: 300, objectFit: "contain", height: 300, marginTop: 20 }}
             />
             <TouchableOpacity onPress={() => {
               navigation.navigate('FindIngredients', {
@@ -75,7 +83,7 @@ const AddDish = ({ navigation }) => {
           </>
 
 
-        )}
+        ) : <></>}
       </View>
     </SafeAreaView>
   );

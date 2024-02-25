@@ -54,7 +54,7 @@ export function HomeScreen({navigation}) {
                 }}
             >
                 <View style={styles.titleCard}>
-                    <Text style={styles.title}>Welcome Pacheco!</Text>
+                    <Text style={styles.title}>Welcome!</Text>
                     <View style={styles.row}>
                         <Text style={styles.goalTitle}>Your Goals</Text>
                         <View style={styles.starsContainer}>
@@ -90,30 +90,6 @@ export function HomeScreen({navigation}) {
                             <Text style={styles.goalLabel}>Database</Text>
                         </View>
                     </View>
-                </View>
-                <View style={styles.tabs}>
-                    <NavigationContainer independent={true}>
-                        <Tab.Navigator
-                            screenOptions={{
-                                tabBarLabelStyle: {
-                                    fontSize: 12,
-                                    fontWeight: "bold",
-                                    color: "#fff",
-                                },
-                                tabBarItemStyle: {height: 60},
-                                tabBarStyle: {backgroundColor: COLORS.primary},
-                            }}
-                        >
-                            <Tab.Screen
-                                name="Journal"
-                                component={EateriesScreen}
-                            />
-                            <Tab.Screen
-                                name="Recipes"
-                                component={RecipesScreen}
-                            />
-                        </Tab.Navigator>
-                    </NavigationContainer>
                 </View>
 
                 <Text style={styles.title2}>My Dishes</Text>
@@ -187,22 +163,7 @@ export function HomeScreen({navigation}) {
                             <Text style={styles.dateLabel}>14 Oct 2023</Text>
                         </View>
                     </View>
-                    <View style={styles.dishCard}>
-                        <Image
-                            style={styles.dishImg}
-                            source={require("../assets/dish1.png")}
-                        />
-                        <View>
-                            <Text style={styles.dishName}>Test Dish</Text>
-                            <Text style={styles.starsLabel}>
-                                25 Stars Earned
-                            </Text>
-                            <Text style={styles.reccsLabel}>
-                                30 recommendations
-                            </Text>
-                            <Text style={styles.dateLabel}>18 Jan 2024</Text>
-                        </View>
-                    </View>
+                    
                 </View>
             </ScrollView>
             <TouchableOpacity
@@ -235,6 +196,7 @@ const styles = StyleSheet.create({
     title2: {
         fontSize: 22,
         fontWeight: "bold",
+        marginTop: 16
     },
     row: {
         display: "flex",

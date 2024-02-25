@@ -14,6 +14,7 @@ import {COLORS} from "../colors";
 import Icon from "react-native-vector-icons/FontAwesome";
 import {useState} from "react";
 import profiles from "../assets/profiles.json";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const EditGoals = ({route, navigation}) => {
     const [searchText, setSearchText] = useState("");
@@ -26,6 +27,22 @@ const EditGoals = ({route, navigation}) => {
         setSearchText(text);
         setActiveFilter(null);
     };
+
+    const saveProfileToLocalStorage = async () => {
+        const dietArr = []
+        for (let i = 0; i < selectedProfiles.length; i++) {
+            let obj = {}
+            obj["name"] = selectedProfiles[i];
+            obj["desc"] = selectedDescription[i];
+            dietArr[i] = obj
+        }
+        try {
+            await AsyncStorage.setItem('diet-profile', JSON.stringify(dietArr))
+        } catch (e) {
+            console.log(e)
+        }
+        console.log("saving done")
+    }
 
     const createProfile = (i, profile, desc, selected) => {
         return (
@@ -102,6 +119,8 @@ const EditGoals = ({route, navigation}) => {
                     <Text style={{fontWeight: "bold", fontSize: 28}}>Edit</Text>
                     <TouchableOpacity
                         onPress={() => {
+                            saveProfileToLocalStorage()
+
                             navigation.navigate("ProfileScreen", {
                                 selectedProfiles: selectedProfiles,
                             });
