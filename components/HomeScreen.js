@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import {
     View,
     Text,
@@ -9,17 +9,44 @@ import {
     Platform,
     PermissionsAndroid,
 } from "react-native";
-import {SafeAreaView} from "react-native-safe-area-context";
-import {NavigationContainer} from "@react-navigation/native";
-import {createMaterialTopTabNavigator} from "@react-navigation/material-top-tabs";
-import {COLORS} from "../colors";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { NavigationContainer, useIsFocused, useNavigation } from "@react-navigation/native";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import { COLORS } from "../colors";
 import Icon from "react-native-vector-icons/FontAwesome";
-import {RecipesScreen} from "./RecipesScreen";
-import {EateriesScreen} from "./EateriesScreen";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { getAuth } from 'firebase/auth';
+import { app } from "../firebase"
 
-export function HomeScreen({navigation}) {
+
+export function HomeScreen() {
     const Tab = createMaterialTopTabNavigator();
+    const navigation = useNavigation();
+
     const [locPermission, setLocPermission] = useState(false);
+    const [dietProfile, setDietProfile] = useState([])
+    const auth = getAuth(app);
+    const retrieveProfile = async () => {
+        try {
+            const jsonValue = await AsyncStorage.getItem('diet-profile');
+            const res = jsonValue != null ? JSON.parse(jsonValue) : null;
+            console.log(res)
+            if (res !== null) {
+                setDietProfile(res);
+                console.log("SUCCESS")
+            }
+        } catch (e) {
+            console.log("Error: " + e)
+        }
+    }
+    const isFocused = useIsFocused();
+
+    useEffect(() => {
+        if(isFocused){
+          retrieveProfile();
+        }
+        
+      }, [isFocused])
 
     const getLocationPermission = async () => {
         if (Platform.OS === "android") {
@@ -46,7 +73,7 @@ export function HomeScreen({navigation}) {
     if (!locPermission) getLocationPermission();
 
     return (
-        <SafeAreaView edges={["left", "right", "bottom"]} style={{flex: 1}}>
+        <SafeAreaView edges={["left", "right", "bottom"]} style={{ flex: 1 }}>
             <ScrollView
                 contentContainerStyle={{
                     justifyContent: "flex-start",
@@ -56,44 +83,47 @@ export function HomeScreen({navigation}) {
                 <View style={styles.titleCard}>
                     <Text style={styles.title}>Welcome!</Text>
                     <View style={styles.row}>
-                        <Text style={styles.goalTitle}>Your Goals</Text>
+                        <Text style={styles.goalTitle}>Your Diet Profile</Text>
                         <View style={styles.starsContainer}>
-                            <Text style={{fontWeight: "600"}}>37</Text>
-                            <Icon
+                        <Icon
                                 name={"star"}
                                 color={COLORS.secondary}
                                 size={18}
                             />
+                            <Text style={{ fontWeight: "600" }}>Streak:</Text>
+                            <Text>3</Text>
                         </View>
                     </View>
 
                     <View style={styles.goalCard}>
-                        <View style={styles.goalItem}>
-                            <Image
-                                style={{height: 36, objectFit: "contain"}}
-                                source={require("../assets/goal1.png")}
-                            />
-                            <Text style={styles.goalLabel}>Get</Text>
-                        </View>
-                        <View style={styles.goalItem}>
-                            <Image
-                                style={{height: 36, objectFit: "contain"}}
-                                source={require("../assets/goal2.png")}
-                            />
-                            <Text style={styles.goalLabel}>From</Text>
-                        </View>
-                        <View style={styles.goalItem}>
-                            <Image
-                                style={{height: 36, objectFit: "contain"}}
-                                source={require("../assets/goal3.png")}
-                            />
-                            <Text style={styles.goalLabel}>Database</Text>
-                        </View>
+                        {(dietProfile && dietProfile.length > 3) ?
+                            dietProfile.slice(0, 3).map((item, i) => (
+                                <View style={styles.goalItem} key={i}>
+                                    <Image
+                                        style={{ height: 36, objectFit: "contain" }}
+                                        source={require("../assets/goal0.png")}
+                                    />
+                                    <Text style={styles.goalLabel}>{item.name}</Text>
+                                </View>
+                            ))
+                            : <></>}
+                            {(dietProfile && dietProfile.length <= 3) ?
+                            dietProfile.map((item, i) => (
+                                <View style={styles.goalItem} key={i}>
+                                    <Image
+                                        style={{ height: 36, objectFit: "contain" }}
+                                        source={require("../assets/goal0.png")}
+                                    />
+                                    <Text style={styles.goalLabel}>{item.name}</Text>
+                                </View>
+                            ))
+                            : <></>}
+
                     </View>
                 </View>
 
-                <Text style={styles.title2}>My Dishes</Text>
-                <View style={styles.dishContainer}>
+                <Text style={styles.title2}>My Food Journal</Text>
+                {(auth.currentUser) ? <View style={styles.dishContainer}>
                     <View style={styles.dishCard}>
                         <Image
                             style={styles.dishImg}
@@ -163,8 +193,18 @@ export function HomeScreen({navigation}) {
                             <Text style={styles.dateLabel}>14 Oct 2023</Text>
                         </View>
                     </View>
-                    
-                </View>
+
+                </View>:
+                <View style={styles.noLoginContainer}>
+                     <Icon
+                     name="cutlery"
+                                color="#aaa"
+                                size={56}
+                            />
+                            <Text style={{fontSize: 18, fontWeight:  700, color: "#999"}}>Please log in to see your journal</Text>
+                            <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate("Profile", {screen: "Login"})}><Text style={{ "color": "#fff", "fontSize": 16, fontWeight: 600 }}>Log In</Text></TouchableOpacity>
+
+                    </View>}
             </ScrollView>
             <TouchableOpacity
                 style={styles.cameraButton}
@@ -209,7 +249,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         paddingHorizontal: 8,
-        width: 80,
+
         justifyContent: "center",
         gap: 8,
         borderRadius: 8,
@@ -285,4 +325,17 @@ const styles = StyleSheet.create({
         zIndex: 8,
         backgroundColor: COLORS.secondary,
     },
+    noLoginContainer: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        marginTop: 64
+    },
+    loginButton: {
+        backgroundColor: COLORS.primary,
+        marginTop: 24,
+        paddingVertical: 12,
+        paddingHorizontal: 42,
+        borderRadius: 8,
+    }
 });

@@ -38,7 +38,7 @@ export function ProfileScreen({ route, navigation }) {
 
   const handleLogout = () => {
     signOut(auth).then(()=>{
-      navigation.navigate('Login')
+      navigation.navigate('HomeScreen')
     }).catch((error) => {
       alert(error.message)
     })
@@ -52,14 +52,14 @@ export function ProfileScreen({ route, navigation }) {
           <View style={styles.circleMask}>
             <Image
               style={styles.profileImg}
-              source={require('../assets/profile.jpg')} />
+              source={require('../assets/profile.png')} />
           </View>
 
           <View>
             <Text style={styles.subtitle}>{(auth.currentUser) ? auth.currentUser.email: "UserABC"}</Text>
             <TouchableOpacity onPress={() => navigation.navigate('Edit Profile')}><Text style={styles.linkLabel}>Edit Profile</Text></TouchableOpacity>
             {(auth.currentUser) ?
-              <TouchableOpacity onPress={() => navigation.navigate('Login')}><Text style={styles.linkLabel}>Logout</Text></TouchableOpacity>
+              <TouchableOpacity onPress={() => handleLogout()}><Text style={styles.linkLabel}>Logout</Text></TouchableOpacity>
               :
               <TouchableOpacity onPress={() => navigation.navigate('Login')}><Text style={styles.linkLabel}>Login/Sign Up</Text></TouchableOpacity>}
 

@@ -19,6 +19,7 @@ const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
 function HomeStackNavigator() {
+    
     return (
         <Stack.Navigator>
             <Stack.Screen
@@ -53,6 +54,7 @@ function HomeStackNavigator() {
                     headerShown: true,
                 }}
             />
+            
         </Stack.Navigator>
     );
 }
