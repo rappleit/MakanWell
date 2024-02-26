@@ -6,7 +6,7 @@
 
 There is a severe lack of awareness for healthier alternatives.
 
-Introducing MakanWell, a super app that is powered with AI to revolutionize eating habits.
+Introducing MakanWell, an app powered with AI to revolutionize eating habits.
 
 ## Features
 
@@ -16,7 +16,6 @@ Introducing MakanWell, a super app that is powered with AI to revolutionize eati
 
 **Curated Listings:** Where are all the low carb options? Where can I get my protein gains? Our app utilises intensive web scraping tools, scavenging through reviews and guides to recommend you the best places and productss that cater to your diet.
 
-**Gamification:** Earn stars for making the conscious choice to select healthier choices, and be rewarded with offers and discounts in your journey of eating healthily!
 
 ## Setup Guide
 
@@ -29,9 +28,13 @@ git clone https://github.com/rappleit/MakanWell.git
 Step 2: Install dependencies
 ```
 npm install
-npm start
-s > a
 ```
+Step 3: Set up the  ```.env``` file by cloning the  ```.env.example``` file
+```
+cp .env.example .env
+```
+Step 4: Retrieve the following API keys from the following websites:
+
 
 #### Android Studio Emulator
 
@@ -44,9 +47,11 @@ Step 2: Start your virtual device
 
 Step 3: In the root directory, run the following command:
 
-``` expo start --tunnel ```
+``` npm start ```
 
-Step 4: Press 'a' to launch the app
+Step 4: Press 's' to switch to Expo Go
+
+Step 5: Press 'a' to run the app on your Android Emulator
 
 #### Expo Go App
 
@@ -54,9 +59,11 @@ Step 1: Download the Expo Go app on your device
 
 Step 2: In the root directory, run the following command:
 
-``` expo start --tunnel ```
+``` npm start ```
 
-Step 3: Scan the QR code in the terminal with the Expo Go app
+Step 3: Press 's' to switch to Expo Go
+
+Step 4: Scan the QR code in the terminal with the Expo Go app
 
 
 ## Potential
