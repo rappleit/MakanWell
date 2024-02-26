@@ -10,6 +10,7 @@ import axios from "axios";
 const DishAnalyser = ({ route, navigation }) => {
     const { capturedImage, foodList } = route.params;
     const [dietProfile, setDietProfile] = useState([])
+    const [isChecking, setIsChecking] = useState(true)
     const retrieveProfile = async () => {
         try {
             const jsonValue = await AsyncStorage.getItem('diet-profile');
@@ -39,7 +40,9 @@ const DishAnalyser = ({ route, navigation }) => {
     }, [dietProfile])
 
     const analyseDish = async () => {
-        console.log("ANALYSE")
+        
+        if (isChecking) {
+        console.log("ANALYSING")
         const prompt1 = "The user is a person with the following diet profile: " +
             [dietProfile.map(item => item.name)].join(" ") +
             " They are logging in a meal that they have consumed which contains the following ingredients " +
@@ -83,27 +86,14 @@ const DishAnalyser = ({ route, navigation }) => {
                 }
             }
             )
-            console.log("sent")
-            console.log(axiosResponse.data.choices[0].message.content)
-            setRes(axiosResponse.data.choices[0].message.content)
+            console.log(axiosResponse.data.choices[0].message.content);
+            setRes(axiosResponse.data.choices[0].message.content);
+            setIsChecking(false);
         } catch (error) {
-            if (error.response) {
-                console.log("huh")
-                // The request was made and the server responded with a status code
-                console.log(error);
-0
-            } else if (error.request) {
-                console.log("heh")
-
-                // The request was made but no response was received
-                console.log(error.request);
-            } else {
-                // Something happened in setting up the request that triggered an Error
-                console.log("hoh")
-
-                console.log('Error', error.message);
-            }
-        }
+            setIsChecking(false);
+            alert(error.message)
+            
+        }}
 
     }
 
@@ -140,6 +130,7 @@ const DishAnalyser = ({ route, navigation }) => {
 
 
                     <Text style={styles.title}>Recommendations:</Text>
+                    {(isChecking) ? <Text style={{ fontSize: 16 }}>Loading...</Text> : <></>}
                     {(recc && recc.length>0) ?
                         recc.map((item, i) => (
                             <View style={styles.ingredientCard} key={i}>

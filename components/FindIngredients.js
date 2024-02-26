@@ -12,8 +12,8 @@ import { TextInput } from 'react-native-gesture-handler';
 
 const FindIngredients = ({ route, navigation }) => {
     const { capturedImage } = route.params;
-    const [foodList, setFoodList] = useState(["Rice"])
-
+    const [foodList, setFoodList] = useState([])
+    const [isChecking, setIsChecking] = useState(true)
     useEffect(() => {
         if (capturedImage) {
 
@@ -23,39 +23,35 @@ const FindIngredients = ({ route, navigation }) => {
     }, [capturedImage])
 
     const uploadImage = async (uri) => {
-        let filename = uri.split('/').pop();
-        const response = await fetch(uri);
+        if (isChecking) {
+            let filename = uri.split('/').pop();
+            const response = await fetch(uri);
 
-        let formData = new FormData();
-        formData.append('image', { uri, name: filename, type: 'image/jpeg' });
+            let formData = new FormData();
+            formData.append('image', { uri, name: filename, type: 'image/jpeg' });
+            try {
+                const axiosResponse = await axios.post(
+                    'https://vision.foodvisor.io/api/1.0/en/analysis',
+                    formData,
+                    {
+                        headers: {
+                            'Authorization': 'Api-Key ' + process.env.FOODVISOR_API_TOKEN,
+                            "Content-Type": "multipart/form-data"
+                        },
+                    }
+                );
 
-        try {
-            const axiosResponse = await axios.post(
-                'https://vision.foodvisor.io/api/1.0/en/analysis',
-                formData,
-                {
-                    headers: {
-                        'Authorization': 'Api-Key ' + process.env.FOODVISOR_API_TOKEN,
-                        "Content-Type": "multipart/form-data"
-                    },
-                }
-            );
+                // Handle the response
+                console.log(axiosResponse.data.items[0].food[0])
+                setFoodList(axiosResponse.data.items.map((item) => item.food[0].food_info.display_name))
+                setIsChecking(false);
 
-            // Handle the response
-            console.log(axiosResponse.data.items[0].food[0])
-            setFoodList(axiosResponse.data.items.map((item) => item.food[0].food_info.display_name))
-        } catch (error) {
-            if (error.response) {
-                // The request was made and the server responded with a status code
-                console.log(error.response.data);
-                console.log(error.response.status);
-                console.log(error.response.headers);
-            } else if (error.request) {
-                // The request was made but no response was received
-                console.log(error.request);
-            } else {
-                // Something happened in setting up the request that triggered an Error
-                console.log('Error', error.message);
+
+            } catch (error) {
+                alert(error.message)
+                setIsChecking(false);
+
+                
             }
         }
     };
@@ -69,7 +65,7 @@ const FindIngredients = ({ route, navigation }) => {
     };
 
     const handleAddItem = () => {
-        if (itemToAdd !="") {
+        if (itemToAdd != "") {
             setFoodList(prevItems => [...prevItems, itemToAdd])
             setItemToAdd("")
         }
@@ -92,7 +88,7 @@ const FindIngredients = ({ route, navigation }) => {
                                 }}>Edit</Text>
                             </TouchableOpacity>
                         </View>
-
+                        {(isChecking) ? <Text style={{ fontSize: 16 }}>Loading...</Text> : <></>}
                         {foodList.map((food, i) => (
                             <View style={styles.ingredientCard} key={i}>
                                 <Text style={styles.ingredientLabel}>{food}</Text>
@@ -100,13 +96,13 @@ const FindIngredients = ({ route, navigation }) => {
                             </View>
                         ))}
 
-                        <TouchableOpacity style={styles.confirmButton}>
-                            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 18 }} onPress={() => {
+                        <TouchableOpacity style={styles.confirmButton}  onPress={() => {
                                 navigation.navigate('Your Meal Insights', {
                                     capturedImage: capturedImage,
                                     foodList: foodList
                                 });
-                            }}>Confirm</Text>
+                            }}>
+                            <Text style={{ color: "#fff", fontWeight: "600", fontSize: 18 }}>Confirm</Text>
                         </TouchableOpacity>
                     </View>
                 </ScrollView>
@@ -126,16 +122,16 @@ const FindIngredients = ({ route, navigation }) => {
                                 value={itemToAdd}
                                 onChangeText={handleChangeText}
                             />
-                             <TouchableOpacity style={styles.addButton} onPress={() => {
-                                    handleAddItem();
-                                }} ><Text style={{color: "#fff"}}>Add</Text></TouchableOpacity>
+                            <TouchableOpacity style={styles.addButton} onPress={() => {
+                                handleAddItem();
+                            }} ><Text style={{ color: "#fff" }}>Add</Text></TouchableOpacity>
                         </View>
 
                         {foodList.map((food, i) => (
                             <View style={styles.ingredientCard2} key={i}>
                                 <Text style={styles.ingredientLabel}>{food}</Text>
                                 <TouchableOpacity onPress={() => {
-                                    setFoodList(foodList.filter(i => i.name !== i.name))
+                                    setFoodList(foodList.filter(i => i !== food))
                                 }} ><Text style={{ "fontWeight": "bold", "fontSize": 12, "color": COLORS.primary }}>Delete</Text></TouchableOpacity>
                             </View>
                         ))}
@@ -202,7 +198,7 @@ const styles = StyleSheet.create({
         padding: 4,
         height: "100%",
         marginBottom: 10,
-        flex:1
+        flex: 1
     },
     ingredientCard: {
         backgroundColor: "#fff",
