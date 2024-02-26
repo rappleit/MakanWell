@@ -133,11 +133,10 @@ export function HomeScreen() {
                             <Text style={styles.dishName}>
                                 Saturday Cai Fan
                             </Text>
-                            <Text style={styles.starsLabel}>1 Star Earned</Text>
                             <Text style={styles.reccsLabel}>
                                 4 recommendations
                             </Text>
-                            <Text style={styles.dateLabel}>14 Oct 2023</Text>
+                            <Text style={styles.dateLabel}>17 Feb 2024</Text>
                         </View>
                     </View>
                     <View style={styles.dishCard}>
@@ -149,13 +148,11 @@ export function HomeScreen() {
                             <Text style={styles.dishName}>
                                 Home Cooked Dinner
                             </Text>
-                            <Text style={styles.starsLabel}>
-                                3 Stars Earned
-                            </Text>
+
                             <Text style={styles.reccsLabel}>
                                 2 recommendations
                             </Text>
-                            <Text style={styles.dateLabel}>14 Oct 2023</Text>
+                            <Text style={styles.dateLabel}>12 Feb 2024</Text>
                         </View>
                     </View>
 
@@ -168,11 +165,10 @@ export function HomeScreen() {
                             <Text style={styles.dishName}>
                                 Hackathon Dinner
                             </Text>
-                            <Text style={styles.starsLabel}>1 Star Earned</Text>
                             <Text style={styles.reccsLabel}>
                                 6 recommendations
                             </Text>
-                            <Text style={styles.dateLabel}>14 Oct 2023</Text>
+                            <Text style={styles.dateLabel}>31 Jan 2024</Text>
                         </View>
                     </View>
                     <View style={styles.dishCard}>
@@ -184,13 +180,10 @@ export function HomeScreen() {
                             <Text style={styles.dishName}>
                                 Friday Rice Bowl
                             </Text>
-                            <Text style={styles.starsLabel}>
-                                2 Stars Earned
-                            </Text>
                             <Text style={styles.reccsLabel}>
                                 3 recommendations
                             </Text>
-                            <Text style={styles.dateLabel}>14 Oct 2023</Text>
+                            <Text style={styles.dateLabel}>18 Jan 20243</Text>
                         </View>
                     </View>
 
