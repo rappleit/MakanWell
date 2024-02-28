@@ -12,7 +12,7 @@ Introducing MakanWell, an app powered with AI to revolutionize eating habits.
 
 **Targeted Recommendation Engine:** Key in your dietary needs and personal goals, and our app will provide you with tailored suggestions to help you achieve healthier eating.
 
-**Smart Food Journal:** Wonder what you could change in your economy rice office lunch? Simply snap a photo of your meal and our computer vision technology will let you know not just the macros of your meal but alternatives to reach your goals.
+**Smart Food Journal:** Wonder what you could change in your economy rice office lunch? Simply snap a photo of your meal and the computer vision technology will let you know not just the macros of your meal but alternatives to reach your goals.
 
 **Curated Listings:** Where are all the low carb options? Where can I get my protein gains? Our app utilises intensive web scraping tools, scavenging through reviews and guides to recommend you the best places and productss that cater to your diet.
 
@@ -34,6 +34,14 @@ Step 3: Set up the  ```.env``` file by cloning the  ```.env.example``` file
 cp .env.example .env
 ```
 Step 4: Retrieve the following API keys from the following websites:
+
+`FOODVISOR_API_TOKEN`: https://www.foodvisor.io/en/vision/
+
+`OPENAI_API_KEY`: https://openai.com/blog/openai-api
+
+`GOOGLE_API_KEY`: https://console.cloud.google.com/project/_/google/maps-apis/credentials?utm_source=Docs_CreateAPIKey&utm_content=Docs_maps-backend
+
+`FIREBASE_API_KEY`: https://firebase.google.com/ 
 
 
 #### Android Studio Emulator
