@@ -43,6 +43,7 @@ Step 4: Retrieve the following API keys from the following websites:
 
 `FIREBASE_API_KEY`: https://firebase.google.com/ 
 
+Note: Add GOOGLE_API_KEY into file Android > app > src > main > AndroidManifest.xml > meta-data geocoding tag
 
 #### Android Studio Emulator
 
